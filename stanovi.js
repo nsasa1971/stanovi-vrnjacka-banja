@@ -110,7 +110,6 @@ const podaciStanovi = [
       "slike/Stan-broj-3-suteren-naslovna-1-2.webp",
       "slike/Stan-broj-3.webp",
       "slike/Stan-broj-3-suteren-naslovna-1-1.webp",
-      "slike/Stan-broj-2.webp",
       "slike/Stan-broj-3-suteren-naslovna-1.webp",
       "slike/Stan-3-bjekat-1.webp",
       "slike/Jezero-I-stan-3.webp"
@@ -138,22 +137,13 @@ const podaciStanovi = [
       "Kupatilo": "3,06 m²"
     },
     "galerija": [
-      "slike/1_3.webp",
       "slike/Stan-broj-2-suteren-naslovna-2.webp",
-      "slike/1_27.webp",
       "slike/Stan-broj-2-suteren-naslovna-1.webp",
-      "slike/1_61218.webp",
       "slike/Jezero-I-stan-2.webp",
-      "slike/1_23.webp",
       "slike/Stan-2-bjekat-1.webp",
-      "slike/1_28.webp",
       "slike/Stan-broj-2-suteren-naslovna-3.webp",
-      "slike/1_26.webp",
-      "slike/1_24.webp",
       "slike/Stan-broj-2-suteren-naslovna.webp",
-      "slike/1_71319.webp",
-      "slike/1_2.webp",
-      "slike/1_25.webp"
+      "slike/1_2.webp"
     ]
   },
   {
@@ -179,9 +169,7 @@ const podaciStanovi = [
       "Terasa": "3,78 m²"
     },
     "galerija": [
-      "slike/Jezero-I-stan-51117.webp",
-      "slike/P5_I11_II17-Objekat-1.webp",
-      "slike/Jezero-I-stan-6711121718.webp"
+      "slike/P5_I11_II17-Objekat-1.webp"
     ]
   },
   {
@@ -233,9 +221,7 @@ const podaciStanovi = [
       "Terasa": "3,13 m²"
     },
     "galerija": [
-      "slike/P6_I12_II18-Objekat-1.webp",
-      "slike/stan_4002.webp",
-      "slike/Jezero-I-stan-6711121718.webp"
+      "slike/P6_I12_II18-Objekat-1.webp"
     ]
   },
   {
@@ -310,7 +296,6 @@ const podaciStanovi = [
       "Terasa": "3,13 m²"
     },
     "galerija": [
-      "slike/stan_4002.webp",
       "slike/P7_I13_II19-Objekat-1.webp"
     ]
   },
@@ -389,7 +374,6 @@ const podaciStanovi = [
     },
     "galerija": [
       "slike/P8_I14_II20-Objekat-1-NASLOVNA.webp",
-      "slike/1_81420.webp",
       "slike/P8_I14_II20-Objekat-1-NASLOVNA.webp"
     ]
   },
@@ -418,7 +402,6 @@ const podaciStanovi = [
     },
     "galerija": [
       "slike/P10_I16_II22-Objekat-1-NASLOVNA.webp",
-      "slike/1_101622.webp",
       "slike/P10_I16_II22-Objekat-1-NASLOVNA.webp"
     ]
   },
@@ -519,7 +502,6 @@ const podaciStanovi = [
       "Kupatilo": "3,26 m²"
     },
     "galerija": [
-      "slike/stan_4032.webp",
       "slike/PS26-Objekat-1.webp"
     ]
   },
@@ -546,7 +528,6 @@ const podaciStanovi = [
       "Kupatilo": "3,27 m²"
     },
     "galerija": [
-      "slike/stan_4034.webp",
       "slike/PS27-Objekat-1.webp"
     ]
   },
@@ -573,7 +554,6 @@ const podaciStanovi = [
       "Kupatilo": "3,06 m²"
     },
     "galerija": [
-      "slike/stan_4036.webp",
       "slike/PS28-Objekat-1.webp"
     ]
   },
@@ -599,7 +579,6 @@ const podaciStanovi = [
       "Kupatilo": "3,06 m²"
     },
     "galerija": [
-      "slike/stan_4040.webp",
       "slike/PS-23.webp"
     ]
   },
@@ -624,8 +603,7 @@ const podaciStanovi = [
       "Kupatilo": "3,26 m²"
     },
     "galerija": [
-      "slike/PS-26.webp",
-      "slike/stan_4054.webp"
+      "slike/PS-26.webp"
     ]
   },
   {
@@ -651,8 +629,7 @@ const podaciStanovi = [
       "Kupatilo": "3,27 m²"
     },
     "galerija": [
-      "slike/PS-27.webp",
-      "slike/stan_4034.webp"
+      "slike/PS-27.webp"
     ]
   },
   {
@@ -676,7 +653,6 @@ const podaciStanovi = [
       "Kupatilo": "3,06 m²"
     },
     "galerija": [
-      "slike/stan_4056.webp",
       "slike/PS-28.webp"
     ]
   },
@@ -754,7 +730,6 @@ const podaciStanovi = [
       "Kupatilo": "3,20 m²"
     },
     "galerija": [
-      "slike/stan_4065.webp",
       "slike/Suteren-Stan-broj-2.webp"
     ]
   },
@@ -779,7 +754,6 @@ const podaciStanovi = [
       "Kupatilo": "3,20 m²"
     },
     "galerija": [
-      "slike/stan_4067.webp",
       "slike/Suteren-Stan-broj-3.webp"
     ]
   },
@@ -834,8 +808,7 @@ const podaciStanovi = [
       "Kupatilo": "3,70 m²"
     },
     "galerija": [
-      "slike/Prizemlje-Stan-broj-5.webp",
-      "slike/stan_4071.webp"
+      "slike/Prizemlje-Stan-broj-5.webp"
     ]
   },
   {
@@ -967,7 +940,6 @@ const podaciStanovi = [
       "Kupatilo": "3,06 m²"
     },
     "galerija": [
-      "slike/stan_4081.webp",
       "slike/Prizemlje-Stan-broj-10.webp"
     ]
   },
@@ -1126,7 +1098,6 @@ const podaciStanovi = [
       "Terasa": "4,59 m²"
     },
     "galerija": [
-      "slike/stan_4095.webp",
       "slike/I-sprat-15-II-sprat-21.webp"
     ]
   },
@@ -1207,7 +1178,6 @@ const podaciStanovi = [
       "slike/P1OsnovaSuteren.webp",
       "slike/P1S1.webp",
       "slike/O1SUTST1.svg",
-      "slike/Suteren.svg",
       "slike/P1-Stan-1.webp"
     ]
   },
@@ -1312,9 +1282,7 @@ const podaciStanovi = [
       "Terasa": "3,26 m²"
     },
     "galerija": [
-      "slike/Prizemlje.svg",
       "slike/P1S5.webp",
-      "slike/P1OsnovaPrizemlje.webp",
       "slike/P1S5.webp"
     ]
   },
@@ -1802,9 +1770,7 @@ const podaciStanovi = [
       "Terasa": "3,92 m²"
     },
     "galerija": [
-      "slike/Osnova-I-sprat.webp",
-      "slike/P1-Stan-13.webp",
-      "slike/Osnova-I-i-II-sprata.webp"
+      "slike/P1-Stan-13.webp"
     ]
   },
   {
@@ -1855,8 +1821,7 @@ const podaciStanovi = [
       "Lođa": "3,26 m²"
     },
     "galerija": [
-      "slike/P1-Stan-24.webp",
-      "slike/Osnova-povucenog-sprata.webp"
+      "slike/P1-Stan-24.webp"
     ]
   },
   {
@@ -1884,8 +1849,7 @@ const podaciStanovi = [
       "Lođa": "9,28 m²"
     },
     "galerija": [
-      "slike/P1-Stan-25.webp",
-      "slike/P1OsnovaPovuceni.webp"
+      "slike/P1-Stan-25.webp"
     ]
   },
   {
@@ -1911,9 +1875,7 @@ const podaciStanovi = [
       "Terasa": "3,61 m²"
     },
     "galerija": [
-      "slike/P2Stan5.webp",
-      "slike/P2-Stan-3.webp",
-      "slike/P2OsnovaPrizemlja.webp"
+      "slike/P2Stan5.webp"
     ]
   },
   {
@@ -2479,8 +2441,7 @@ const podaciStanovi = [
       "Terasa": "3,61 m²"
     },
     "galerija": [
-      "slike/P3-Stan-5.webp",
-      "slike/P3OsnovaPrizemlja.webp"
+      "slike/P3-Stan-5.webp"
     ]
   },
   {
@@ -3093,7 +3054,6 @@ const podaciStanovi = [
       "Kupatilo": "3,03 m²"
     },
     "galerija": [
-      "slike/Stan-23-Vilotijevic.webp",
       "slike/Stan-25-Rada-Vil.webp"
     ]
   }

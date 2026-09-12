@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stanovi Vrnjačka Banja | Direktan kontakt sa investitorom</title>
+  
+  <!-- Fontovi i FontAwesome ikonice -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --primary: #FF385C;
+      --primary-hover: #e02447;
+      --dark: #1E293B;
+      --text: #475569;
+      --light-bg: #F8FAFC;
+      --border: #E2E8F0;
+      --radius: 8px;
+    }
+
+    body, p, h1, h2, h3, h4, h5, h6, a, input, select, button {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background-color: var(--light-bg); color: var(--text); line-height: 1.6; }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+
+    /* 1. Header */
+    .header {
+      background: #ffffff;
+      padding: 14px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .header-inner {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+    }
+    .header-left { justify-self: start; display: flex; align-items: center; }
+    .header-center { justify-self: center; }
+    .header-right { justify-self: end; display: flex; align-items: center; gap: 12px; }
+
+    .logo { display: flex; align-items: center; text-decoration: none; }
+    .logo img { height: 44px; width: auto; object-fit: contain; }
+
+    .nav-links { display: flex; gap: 26px; list-style: none; align-items: center; position: relative; }
+    .nav-links > li { position: relative; }
+    .nav-links a { 
+      text-decoration: none; 
+      color: var(--dark); 
+      font-weight: 600; 
+      font-size: 0.92rem; 
+      transition: color 0.2s; 
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .nav-links a:hover { color: var(--primary); }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #ffffff;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      list-style: none;
+      padding: 10px 0;
+      min-width: 200px;
+      display: none;
+      border: 1px solid var(--border);
+      z-index: 1100;
+    }
+    .nav-item-dropdown:hover .dropdown-menu { display: block; }
+    .dropdown-menu li a {
+      padding: 8px 16px;
+      font-size: 0.88rem;
+      color: var(--dark);
+      font-weight: 500;
+    }
+    .dropdown-menu li a:hover {
+      background: #F8FAFC;
+      color: var(--primary);
+    }
+
+    .btn-call-nav {
+      background: var(--primary);
+      color: #fff;
+      padding: 9px 18px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.88rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .btn-call-nav:hover { background: var(--primary-hover); }
+
+    .hamburger-btn {
+      display: none;
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      color: var(--dark);
+      width: 42px;
+      height: 42px;
+      border-radius: 6px;
+      font-size: 1.25rem;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* 2. Hero & Pretraga */
+    .hero {
+      background: linear-gradient(rgba(15, 23, 42, 0.45), rgba(15, 23, 42, 0.45)), 
+                  url('slike/naslovna.webp') center/cover no-repeat;
+      padding: 120px 0 0;
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+    .hero-content { margin-top: auto; margin-bottom: 50px; }
+    .hero h1 { font-size: 2.8rem; font-weight: 700; margin-bottom: 14px; text-shadow: 0 2px 5px rgba(0,0,0,0.4); }
+    .hero p { font-size: 1.2rem; color: #F1F5F9; max-width: 750px; margin: 0 auto; }
+
+    .search-box {
+      background: #ffffff;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      transform: translateY(50%);
+      position: relative;
+      z-index: 20;
+      text-align: left;
+    }
+    .search-grid { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; }
+    .search-col { flex: 1 1 180px; }
+    .search-col label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #64748B;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      display: block;
+    }
+    .search-col input, .search-col select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      outline: none;
+      font-size: 0.92rem;
+      background: #fff;
+      color: var(--dark);
+    }
+    .search-col input:focus, .search-col select:focus { border-color: var(--primary); }
+    
+    .btn-search-main {
+      padding: 10px 22px;
+      background: var(--primary);
+      border: 1px solid var(--primary);
+      border-radius: 6px;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.92rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      height: 42px;
+      transition: background 0.2s;
+    }
+    .btn-search-main:hover { background: var(--primary-hover); }
+
+    .btn-reset {
+      padding: 10px 16px;
+      background: #F1F5F9;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      height: 42px;
+    }
+    .btn-reset:hover { color: var(--primary); background: #E2E8F0; }
+
+    .sec-title { text-align: center; margin-bottom: 45px; }
+    .sec-title h2 { font-size: 2.2rem; font-weight: 700; color: var(--dark); }
+    .sec-title h2 span { color: var(--primary); }
+    .sec-title p { color: #64748B; font-size: 1.05rem; margin-top: 6px; }
+
+    /* 3. Stambeni Objekti */
+    .objects-section { padding: 130px 0 80px; background: #ffffff; }
+    .obj-grid-showcase {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px 40px;
+    }
+    .obj-item { text-align: center; cursor: pointer; }
+    .obj-header { margin-bottom: 18px; }
+    .obj-header h3 {
+      font-size: 1.5rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #111827;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .obj-divider {
+      width: 50px;
+      height: 2px;
+      background: var(--primary);
+      margin: 0 auto 12px;
+    }
+    .obj-header p {
+      color: #475569;
+      font-size: 0.95rem;
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+    .obj-img-container {
+      width: 100%;
+      height: 380px;
+      overflow: hidden;
+      border-radius: 4px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #F8FAFC;
+    }
+    .obj-item:hover .obj-img-container {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px rgba(0,0,0,0.14);
+    }
+    .obj-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* 4. Preporučeni stanovi */
+    .rec-scroll-wrap {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding-bottom: 20px;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: thin;
+    }
+    .rec-card {
+      flex: 0 0 310px;
+      scroll-snap-align: start;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s;
+    }
+    .rec-card:hover { transform: translateY(-4px); }
+
+    /* 5. Glavni Katalog */
+    .catalog-section { padding: 75px 0; background: #F8FAFC; }
+    .catalog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 28px; }
+    .prop-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .prop-card:hover { transform: translateY(-5px); box-shadow: 0 12px 28px rgba(0,0,0,0.1); }
+    .prop-img-wrap { position: relative; height: 230px; background: #ffffff; cursor: pointer; padding: 8px; }
+    .prop-img-wrap img { width: 100%; height: 100%; object-fit: contain; }
+    .prop-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: #10B981;
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+    .prop-price {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      background: rgba(15,23,42,0.85);
+      color: #fff;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+    .prop-body { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; }
+    .prop-loc { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; color: var(--primary); margin-bottom: 6px; }
+    .prop-title { font-size: 1.15rem; font-weight: 700; color: var(--dark); margin-bottom: 10px; cursor: pointer; }
+    .prop-specs {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      padding: 12px 0;
+      margin-bottom: 16px;
+      border-top: 1px solid #F1F5F9;
+      border-bottom: 1px solid #F1F5F9;
+      font-size: 0.85rem;
+      color: #64748B;
+    }
+    .prop-actions { display: flex; gap: 8px; margin-top: auto; }
+    .btn-detalji {
+      flex: 1;
+      padding: 10px;
+      background: var(--dark);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+    .btn-detalji:hover { background: #334155; }
+    .btn-icon-action {
+      width: 40px;
+      height: 40px;
+      background: #F1F5F9;
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .btn-icon-action:hover { background: #E2E8F0; color: var(--primary); }
+
+    /* 6. O nama */
+    .why-section { padding: 80px 0; background: #fff; }
+    .about-text-wrap {
+      max-width: 900px;
+      margin: 0 auto 50px;
+      text-align: center;
+      color: #475569;
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+    .why-grid { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; }
+    .why-card {
+      flex: 1 1 calc(25% - 24px);
+      min-width: 240px;
+      text-align: center;
+      padding: 30px 20px;
+      border-radius: 12px;
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+    }
+    .why-icon {
+      width: 65px;
+      height: 65px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      background: rgba(255, 56, 92, 0.1);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+    }
+
+    /* 7. Blog Sekcija */
+    .blog-section { padding: 80px 0; background: #ffffff; border-top: 1px solid var(--border); }
+    .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+    .blog-card {
+      background: #F8FAFC;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .blog-card:hover { transform: translateY(-4px); }
+    .blog-img { height: 210px; width: 100%; object-fit: cover; }
+    .blog-body { padding: 22px; display: flex; flex-direction: column; flex-grow: 1; }
+    .blog-date { font-size: 0.8rem; color: var(--primary); font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }
+    .blog-title { font-size: 1.2rem; font-weight: 700; color: var(--dark); margin-bottom: 12px; line-height: 1.4; }
+    .blog-desc { font-size: 0.92rem; color: #64748B; margin-bottom: 16px; line-height: 1.6; }
+    .blog-link { font-size: 0.88rem; font-weight: 700; color: var(--primary); margin-top: auto; display: inline-flex; align-items: center; gap: 6px; }
+
+    /* 8. Kontakt Sekcija */
+    .contact-showcase-section { padding: 80px 0; background: #F8FAFC; border-top: 1px solid var(--border); }
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 50px;
+      background: #ffffff;
+      padding: 45px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      border: 1px solid var(--border);
+    }
+    .contact-info-col { text-align: center; display: flex; flex-direction: column; justify-content: center; }
+    .contact-info-col h3 {
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #111827;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+    .contact-info-list { list-style: none; margin-bottom: 35px; line-height: 2; font-size: 0.95rem; color: #334155; }
+    .contact-info-list strong { color: #0f172a; }
+    .contact-info-list a { color: inherit; text-decoration: none; }
+    .contact-hours h4 {
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      color: #111827;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .contact-hours p { line-height: 1.9; font-size: 0.95rem; color: #334155; margin: 0; }
+
+    .contact-form-col form { display: flex; flex-direction: column; gap: 14px; }
+    .contact-form-col input, .contact-form-col textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #D1D5DB;
+      border-radius: 2px;
+      outline: none;
+      font-style: italic;
+      font-size: 0.95rem;
+      color: #1E293B;
+      background: #fff;
+    }
+    .contact-form-col input:focus, .contact-form-col textarea:focus { border-color: var(--primary); }
+    .contact-form-col textarea { min-height: 160px; resize: vertical; }
+    .btn-primary-submit {
+      align-self: flex-start;
+      padding: 12px 36px;
+      background: var(--primary);
+      color: #ffffff;
+      border: none;
+      border-radius: 2px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-primary-submit:hover { background: var(--primary-hover); }
+
+    /* 9. Footer */
+    .footer { background-color: #111827; color: #94A3B8; padding: 70px 0 0; }
+    .footer-grid { display: flex; flex-wrap: wrap; gap: 30px; justify-content: space-between; }
+    .footer-col { flex: 1 1 260px; }
+    .footer-logo { display: inline-block; margin-bottom: 20px; }
+    .footer-logo img { height: 42px; width: auto; object-fit: contain; }
+    .footer-col h3 {
+      color: #fff;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--primary);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .footer-col ul { list-style: none; line-height: 2.3; font-size: 0.9rem; }
+    .footer-col ul a { color: #94A3B8; text-decoration: none; }
+    .footer-col ul a:hover { color: #fff; }
+    .footer-bottom {
+      border-top: 1px solid #1E293B;
+      margin-top: 50px;
+      padding: 22px 0;
+      background-color: #0B0F19;
+      font-size: 0.85rem;
+    }
+
+    /* 10. Modali */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(4px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+    .modal-box {
+      background: #ffffff;
+      border-radius: 12px;
+      max-width: 740px;
+      width: 100%;
+      max-height: 92vh;
+      overflow-y: auto;
+      position: relative;
+    }
+    .modal-close {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: #fff;
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1.3rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-img-container {
+      width: 100%;
+      height: 340px;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid var(--border);
+      padding: 16px;
+    }
+    .modal-img-container img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    .modal-content { padding: 24px; }
+    
+    .modal-specs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      background: #F8FAFC;
+      padding: 16px;
+      border-radius: 8px;
+      margin: 18px 0;
+      font-size: 0.9rem;
+    }
+    
+    .modal-prostorije-box {
+      margin-bottom: 24px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .modal-prostorije-title {
+      background: #F1F5F9;
+      padding: 10px 16px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--dark);
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--border);
+    }
+    .modal-prostorije-list {
+      list-style: none;
+      padding: 12px 16px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px 16px;
+      font-size: 0.88rem;
+    }
+    .modal-prostorije-list li {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed #E2E8F0;
+      padding-bottom: 4px;
+    }
+
+    .modal-gallery {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+      overflow-x: auto;
+      padding-bottom: 6px;
+    }
+    .modal-gallery img {
+      width: 120px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .modal-gallery img:hover { transform: scale(1.03); }
+
+    @media (max-width: 991px) {
+      .header-inner { display: flex; justify-content: space-between; }
+      .header-center { display: none; }
+      .hamburger-btn { display: inline-flex; }
+      .obj-grid-showcase { grid-template-columns: 1fr; gap: 40px; }
+      .contact-layout { grid-template-columns: 1fr; padding: 25px; }
+      .nav-links.mobile-active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        padding: 20px 24px;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+        border-top: 1px solid var(--border);
+        gap: 16px;
+        z-index: 999;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero { padding: 70px 0 0; min-height: auto; }
+      .hero h1 { font-size: 1.8rem; }
+      .search-box { transform: translateY(25%); }
+      .objects-section { padding-top: 110px; }
+      .modal-prostorije-list { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="header-left">
+        <a href="#" class="logo">
+          <img src="slike/logo.png" alt="Stanovi Vrnjačka Banja" onerror="this.outerHTML='<span style=\'font-size:1.4rem;font-weight:700;color:#1E293B;\'>Stanovi <strong style=\'color:#FF385C;\'>VB</strong></span>'">
+        </a>
+      </div>
+
+      <nav class="header-center">
+        <ul class="nav-links" id="glavniMeni">
+          <li><a href="#" onclick="zatvoriMeni()">Početna</a></li>
+          <li class="nav-item-dropdown">
+            <a href="#objekti" onclick="zatvoriMeni()">Objekti <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#katalog" onclick="filtrirajPoObjektu('Rada Vilotijevića'); zatvoriMeni();">Rada Vilotijevića</a></li>
+              <li><a href="#katalog" onclick="filtrirajPoObjektu('Heroja Čajke'); zatvoriMeni();">Heroja Čajke</a></li>
+              <li><a href="#katalog" onclick="filtrirajPoObjektu('Jezero'); zatvoriMeni();">Jezero</a></li>
+              <li><a href="#katalog" onclick="filtrirajPoObjektu('Porta Infinitas'); zatvoriMeni();">Porta Infinitas</a></li>
+            </ul>
+          </li>
+          <li><a href="#preporuka" onclick="zatvoriMeni()">Preporuka</a></li>
+          <li><a href="#o-nama" onclick="zatvoriMeni()">O nama</a></li>
+          <li><a href="#blog" onclick="zatvoriMeni()">Blog</a></li>
+          <li><a href="#kontakt" onclick="zatvoriMeni()">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <a href="tel:+381653268722" class="btn-call-nav">
+          <i class="fas fa-phone-alt"></i> <span>(+381) 65 326 87 22</span>
+        </a>
+        <button type="button" class="hamburger-btn" id="btnHamburger" onclick="toggleMeni()" aria-label="Navigacija">
+          <i class="fas fa-bars" id="hamburgerIkonica"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO & PRETRAGA -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Pronađite svoj idealan dom<br><span style="color: var(--primary);">u Vrnjačkoj Banji</span></h1>
+      <p>Kupovina direktno od investitora — moderna novogradnja bez posrednika i provizije</p>
+    </div>
+
+    <div class="container">
+      <div class="search-box">
+        <div class="search-grid">
+          <div class="search-col">
+            <label>Pretraga</label>
+            <input type="text" id="selTekst" placeholder="Npr. Stan 12...">
+          </div>
+          <div class="search-col">
+            <label>Objekat / Zgrada</label>
+            <select id="selObjekat"><option value="">Svi objekti</option></select>
+          </div>
+          <div class="search-col">
+            <label>Tip stana</label>
+            <select id="selTip"><option value="">Svi tipovi</option></select>
+          </div>
+          <div class="search-col">
+            <label>Spratnost</label>
+            <select id="selSprat"><option value="">Svi spratovi</option></select>
+          </div>
+          <div class="search-col" style="flex: 1 1 110px;">
+            <label>Min m²</label>
+            <input type="number" id="inM2Min" placeholder="Od">
+          </div>
+          <div class="search-col" style="flex: 1 1 110px;">
+            <label>Maks m²</label>
+            <input type="number" id="inM2Max" placeholder="Do">
+          </div>
+          <div style="flex: 0 0 auto; display: flex; gap: 8px; align-items: flex-end;">
+            <button id="btnPretrazi" type="button" class="btn-search-main">
+              <i class="fas fa-search"></i> Pretraži
+            </button>
+            <button id="btnReset" type="button" class="btn-reset" title="Poništi sve filtere">
+              <i class="fas fa-undo"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAMBENI OBJEKTI -->
+  <section id="objekti" class="objects-section">
+    <div class="container">
+      <div class="sec-title">
+        <h2>Stambeni <span>Objekti</span></h2>
+        <p>Izaberite objekat i pogledajte dostupne stanove u novogradnji</p>
+      </div>
+
+      <div class="obj-grid-showcase">
+        <div class="obj-item" onclick="filtrirajPoObjektu('Rada Vilotijevića')">
+          <div class="obj-header">
+            <h3>RADA VILOTIJEVIĆA</h3>
+            <div class="obj-divider"></div>
+            <p>Urbani objekat sa ukupno 22 stambene jedinice, bazenom i zajedničkim zastaklenim prostorom na povučenom spratu.</p>
+          </div>
+          <div class="obj-img-container">
+            <img src="slike/rada_vilotijevica.webp" alt="Rada Vilotijevića" loading="lazy" onerror="this.src='slike/naslovna.webp'">
+          </div>
+        </div>
+
+        <div class="obj-item" onclick="filtrirajPoObjektu('Heroja Čajke')">
+          <div class="obj-header">
+            <h3>HEROJA ČAJKE</h3>
+            <div class="obj-divider"></div>
+            <p>Kompleks od tri zgrade sa ukupno 58 stambenih jedinica, SPA centrom i GYM salom.</p>
+          </div>
+          <div class="obj-img-container">
+            <img src="slike/heroja_cajke.webp" alt="Heroja Čajke" loading="lazy" onerror="this.src='slike/naslovna.webp'">
+          </div>
+        </div>
+
+        <div class="obj-item" onclick="filtrirajPoObjektu('Jezero')">
+          <div class="obj-header">
+            <h3>JEZERO</h3>
+            <div class="obj-divider"></div>
+            <p>Urbani kompleks od dve zgrade sa ukupno 56 modernih stanova koji ispunjavaju sve savremene standarde gradnje.</p>
+          </div>
+          <div class="obj-img-container">
+            <img src="slike/jezero.webp" alt="Jezero" loading="lazy" onerror="this.src='slike/naslovna.webp'">
+          </div>
+        </div>
+
+        <div class="obj-item" onclick="filtrirajPoObjektu('Porta Infinitas')">
+          <div class="obj-header">
+            <h3>PORTA INFINITAS</h3>
+            <div class="obj-divider"></div>
+            <p>Novi kompleks od tri zgrade sa 72 stambene jedinice, bazenom i panorama liftom.</p>
+          </div>
+          <div class="obj-img-container">
+            <img src="slike/porta_infinitas.webp" alt="Porta Infinitas" loading="lazy" onerror="this.src='slike/naslovna.webp'">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREPORUČENI STANOVI -->
+  <section id="preporuka" style="padding: 65px 0; background: #fff; border-top: 1px solid #F1F5F9;">
+    <div class="container">
+      <div class="sec-title">
+        <h2>Preporučeni <span>Stanovi</span></h2>
+        <p>Izdvajamo za vas najbolje strukture iz izgrađenih objekata</p>
+      </div>
+      <div class="rec-scroll-wrap" id="istaknutiStanovi"></div>
+    </div>
+  </section>
+
+  <!-- GLAVNI KATALOG STANOVA -->
+  <section id="katalog" class="catalog-section">
+    <div class="container">
+      <div class="sec-title">
+        <h2>Aktuelna <span>Ponuda</span> Stanova</h2>
+        <p id="brojacPrikaza">Učitavanje ponude stanova...</p>
+      </div>
+
+      <div class="catalog-grid" id="gridStanova"></div>
+
+      <div id="nemaRezultata" style="display: none; text-align: center; padding: 50px 20px;">
+        <i class="fas fa-search" style="font-size: 2.5rem; color: #CBD5E1; margin-bottom: 15px;"></i>
+        <h4 style="color: var(--dark); font-weight: 700;">Nema pronađenih stanova</h4>
+        <p style="color: #64748B;">Pokušajte sa drugačijim parametrima ili poništite pretragu.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- O NAMA -->
+  <section id="o-nama" class="why-section">
+    <div class="container">
+      <div class="sec-title">
+        <h2>O Nama & <span>Našim Projektima</span></h2>
+        <p>Vaš pouzdan partner za investiciju u Vrnjačkoj Banji</p>
+      </div>
+      <div class="about-text-wrap">
+        <p>
+          Specijalizovani smo za projektovanje i izgradnju modernih, energetski efikasnih stambenih kompleksa na najatraktivnijim lokacijama u Vrnjačkoj Banji. Naša misija je stvaranje trajnih vrednosti kroz primenu vrhunskih građevinskih materijala, savremene arhitekture i dodatnih sadržaja poput bazena, spa centara i panorama liftova. Kupovinom direktno od investitora ostvarujete maksimalnu sigurnost, čistu pravnu dokumentaciju i podršku tokom celog procesa kupovine i povrata PDV-a.
+        </p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-handshake"></i></div>
+          <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--dark); margin-bottom: 8px;">Bez provizije</h3>
+          <p style="color: #64748B; font-size: 0.9rem;">Kupujete direktno od investitora, bez posrednika i dodatnih troškova.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-file-signature"></i></div>
+          <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--dark); margin-bottom: 8px;">Uredna dokumentacija</h3>
+          <p style="color: #64748B; font-size: 0.9rem;">Svi objekti poseduju uredne građevinske i upotrebne dozvole.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-percent"></i></div>
+          <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--dark); margin-bottom: 8px;">Povrat PDV-a</h3>
+          <p style="color: #64748B; font-size: 0.9rem;">Mogućnost povrata 10% PDV-a za kupce prvog stana uz podršku za kredite.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-map-marked-alt"></i></div>
+          <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--dark); margin-bottom: 8px;">Top lokacija</h3>
+          <p style="color: #64748B; font-size: 0.9rem;">Mirno okruženje u blizini banjskog parka, idealno za život i rentiranje.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG SEKCIJA -->
+  <section id="blog" class="blog-section">
+    <div class="container">
+      <div class="sec-title">
+        <h2>Blog & <span>Korisni Saveti</span></h2>
+        <p>Saznajte sve o kupovini nekretnina i investiranju u Vrnjačkoj Banji</p>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card" onclick="otvoriBlog(1)">
+          <img src="slike/naslovna.webp" alt="Investiranje u nekretnine Vrnjačka Banja" class="blog-img">
+          <div class="blog-body">
+            <span class="blog-date">Vodič za kupce</span>
+            <h3 class="blog-title">Zašto je kupovina stana u Vrnjačkoj Banji odlična investicija?</h3>
+            <p class="blog-desc">Vrnjačka Banja beleži rekordan rast turističkih poseta tokom cele godine. Saznajte koliki je prosečan povrat investicije kroz izdavanje stanova turistima.</p>
+            <span class="blog-link">Pročitaj ceo tekst &rarr;</span>
+          </div>
+        </article>
+        <article class="blog-card" onclick="otvoriBlog(2)">
+          <img src="slike/rada_vilotijevica.webp" alt="Povrat PDV za prvi stan" class="blog-img">
+          <div class="blog-body">
+            <span class="blog-date">Pravni saveti</span>
+            <h3 class="blog-title">Sve što treba da znate o povratu PDV-a od 10% pri kupovini novogradnje</h3>
+            <p class="blog-desc">Kompletan spisak dokumentacije i procedura za refundaciju PDV-a za kupce prvog stana u direktnoj kupovini od investitora.</p>
+            <span class="blog-link">Pročitaj ceo tekst &rarr;</span>
+          </div>
+        </article>
+        <article class="blog-card" onclick="otvoriBlog(3)">
+          <img src="slike/porta_infinitas.webp" alt="Opremanje stana za izdavanje" class="blog-img">
+          <div class="blog-body">
+            <span class="blog-date">Turizam & Rentiranje</span>
+            <h3 class="blog-title">Prednosti novogradnje sa dodatnim sadržajima (bazen, spa i lift)</h3>
+            <p class="blog-desc">Kako objekti sa velnes sadržajima i panoramskim liftovima ostvaruju znatno veću popunjenost i cenu noćenja u banjskom turizmu.</p>
+            <span class="blog-link">Pročitaj ceo tekst &rarr;</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT SEKCIJA -->
+  <section id="kontakt" class="contact-showcase-section">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info-col">
+          <h3>KONTAKT PODACI</h3>
+          <ul class="contact-info-list">
+            <li><strong>Email:</strong> <a href="mailto:admin@stanovivbanja.com">admin@stanovivbanja.com</a></li>
+            <li><strong>Telefon:</strong> <a href="tel:+381653268722">(+381) 65 326 87 22</a></li>
+            <li><strong>Adresa:</strong> Ive Andrića 3 i Heroja Čajke 14, Vrnjačka Banja, Srbija</li>
+          </ul>
+
+          <div class="contact-hours">
+            <h4>RADNO VREME</h4>
+            <p><strong>Ponedeljak–Petak:</strong> 09.00 do 17.00</p>
+            <p><strong>Subota:</strong> 10.00 do 15.00</p>
+            <p><strong>Nedelja:</strong> Zatvoreno</p>
+          </div>
+        </div>
+
+        <div class="contact-form-col">
+          <form onsubmit="event.preventDefault(); alert('Hvala Vam! Vaša poruka je uspešno poslata.'); this.reset();">
+            <input type="text" placeholder="Vaše ime*" required>
+            <input type="email" placeholder="Vaš email*" required>
+            <input type="text" placeholder="Naslov">
+            <textarea placeholder="Vaša poruka" required></textarea>
+            <button type="submit" class="btn-primary-submit">POŠALJI</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col" style="flex: 1 1 320px;">
+        <a href="#" class="footer-logo">
+          <img src="slike/logo_white.png" alt="Stanovi Vrnjačka Banja" onerror="this.outerHTML='<span style=\'font-size:1.4rem;font-weight:700;color:#fff;\'>Stanovi <strong style=\'color:#FF385C;\'>VB</strong></span>'">
+        </a>
+        <p style="font-size: 0.9rem; line-height: 1.6; color: #94A3B8;">
+          Direktna prodaja modernih stanova u novogradnji u Vrnjačkoj Banji. Vrhunski kvalitet gradnje, uredna dokumentacija i podrška tokom celog kupoprodajnog procesa.
+        </p>
+      </div>
+
+      <div class="footer-col" style="flex: 1 1 180px;">
+        <h3>Navigacija</h3>
+        <ul>
+          <li><a href="#">Početna strana</a></li>
+          <li><a href="#objekti">Objekti</a></li>
+          <li><a href="#o-nama">O nama</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col" style="flex: 1 1 260px;">
+        <h3>Kontakt</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt" style="color: var(--primary); width: 16px;"></i> Ive Andrića 3 & Heroja Čajke 14</li>
+          <li><i class="fas fa-phone-alt" style="color: var(--primary); width: 16px;"></i> <a href="tel:+381653268722">(+381) 65 326 87 22</a></li>
+          <li><i class="fab fa-whatsapp" style="color: #25D366; width: 16px;"></i> <a href="https://wa.me/381653268722" target="_blank" style="color: #25D366;">WhatsApp kontakt</a></li>
+          <li><i class="fas fa-envelope" style="color: var(--primary); width: 16px;"></i> admin@stanovivbanja.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+        <p style="margin: 0; color: #64748B;">&copy; 2026 Stanovi Vrnjačka Banja. Sva prava zadržana.</p>
+        <span style="color: #64748B;">Direktna prodaja stanova</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DUGME ZA VRH -->
+  <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" style="position: fixed; bottom: 25px; right: 25px; width: 44px; height: 44px; background: var(--primary); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.25); text-decoration: none; z-index: 99;">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- MODAL ZA BRZI PREGLED STANA -->
+  <div class="modal-overlay" id="modalStan">
+    <div class="modal-box">
+      <button class="modal-close" onclick="zatvoriModal()">&times;</button>
+      <div class="modal-img-container">
+        <img id="modalSlika" src="" alt="Skica stana">
+      </div>
+      <div class="modal-content">
+        <div id="modalLokacija" style="font-size: 0.8rem; color: var(--primary); font-weight: 700; text-transform: uppercase;"></div>
+        <h3 id="modalNaslov" style="font-size: 1.4rem; font-weight: 700; color: var(--dark); margin: 4px 0;"></h3>
+        <p id="modalObjekat" style="font-size: 0.9rem; color: #64748B; margin-bottom: 12px;"></p>
+
+        <!-- Galerija dodatnih slika (zgrada, pozicija na spratu) -->
+        <div id="modalGalerijaWrap" style="display: none;">
+          <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--dark); margin-bottom: 6px;">Galerija objekta i pozicija:</div>
+          <div class="modal-gallery" id="modalGalerijaSlike"></div>
+        </div>
+
+        <div class="modal-specs-grid">
+          <div>Objekat: <strong id="specObjekat">-</strong></div>
+          <div>Sprat: <strong id="specSprat">-</strong></div>
+          <div>Ukupna površina: <strong id="specM2">-</strong></div>
+          <div>Broj soba: <strong id="specSobe">-</strong></div>
+          <div>Broj kupatila: <strong id="specKupatila">-</strong></div>
+          <div>Cena: <strong>Na upit</strong></div>
+        </div>
+
+        <!-- Dinamička sekcija za detaljne površine prostorija -->
+        <div class="modal-prostorije-box" id="modalProstorijeBox" style="display: none;">
+          <div class="modal-prostorije-title">Struktura prostorija i površine</div>
+          <ul class="modal-prostorije-list" id="modalProstorijeList"></ul>
+        </div>
+
+        <div style="display: flex; gap: 12px;">
+          <a id="modalCallBtn" href="tel:+381653268722" style="flex: 1; padding: 12px; background: var(--dark); color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600; text-align: center; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+            <i class="fas fa-phone-alt"></i> Pozovi
+          </a>
+          <a id="modalWaBtn" href="#" target="_blank" style="flex: 1; padding: 12px; background: #25D366; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600; text-align: center; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+            <i class="fab fa-whatsapp"></i> Pošalji Upit
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL ZA BLOG TEKSTOVE -->
+  <div class="modal-overlay" id="modalBlog">
+    <div class="modal-box" style="max-width: 750px;">
+      <button class="modal-close" onclick="zatvoriBlogModal()">&times;</button>
+      <div style="padding: 30px;">
+        <span id="blogModalDatum" style="font-size: 0.85rem; color: var(--primary); font-weight: 700; text-transform: uppercase;"></span>
+        <h2 id="blogModalNaslov" style="font-size: 1.6rem; font-weight: 700; color: var(--dark); margin: 8px 0 20px;"></h2>
+        <div id="blogModalSadrzaj" style="font-size: 1rem; color: #475569; line-height: 1.8; display: flex; flex-direction: column; gap: 14px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- UČITAVANJE BAZE STANOVA -->
+  <script src="stanovi.js"></script>
+
+  <script>
+    var telBroj = "+381653268722";
+    var stanovi = typeof podaciStanovi !== 'undefined' ? podaciStanovi : [];
+
+    var blogTekstovi = {
+      1: {
+        datum: "Vodič za kupce",
+        naslov: "Zašto je kupovina stana u Vrnjačkoj Banji odlična investicija?",
+        sadrzaj: [
+          "Vrnjačka Banja već decenijama predstavlja neprikosnovenu turističku destinaciju u Srbiji, ali poslednjih godina beleži ekspanziju i u sektoru stanogradnje i kratkoročnog rentiranja.",
+          "Zahvaljujući stalnom porastu broja domaćih i stranih turista, kupovina apartmana ili stana u novogradnji pruža vlasnicima priliku za stabilan pasivni prihod kroz izdavanja tokom cele godine, a ne samo u letnjoj sezoni.",
+          "Pored turističkog potencijala, cene nekretnina u Banji beleže stabilan rast, što znači da Vaša investicija ne samo da čuva vrednost od inflacije, već vremenom dobija na kapitalnoj vrednosti. Kupovina direktno od investitora dodatno maksimizuje vašu zaradu jer nema posredničkih provizija."
+        ]
+      },
+      2: {
+        datum: "Pravni saveti",
+        naslov: "Sve što treba da znate o povratu PDV-a od 10% pri kupovini novogradnje",
+        sadrzaj: [
+          "Kupci prvog stana u Republici Srbiji imaju zakonsko pravo na refundaciju poreza na dodatu vrednost (PDV) u iznosu od 10%, što predstavlja značajnu finansijsku uštedu.",
+          "Da biste ostvarili pravo na povrat PDV-a, potrebno je da ste punoletni državljanin Republike Srbije sa prebivalištem u zemlji, da od 1. jula 2006. godine pa do dana overe ugovora niste imali u svojini, odnosno susvojini stan na teritoriji Srbije, kao i da ugovorena cena stana sa PDV-om bude u potpunosti isplaćena na račun investitora.",
+          "U saradnji sa našim pravnim timom, svi kupci dobijaju kompletnu dokumentaciju i asistenciju u pripremi zahteva koji se predaje nadležnoj Poreskoj upravi odmah nakon uknjižbe."
+        ]
+      },
+      3: {
+        datum: "Turizam & Rentiranje",
+        naslov: "Prednosti novogradnje sa dodatnim sadržajima (bazen, spa i lift)",
+        sadrzaj: [
+          "Moderne stambene jedinice i kompleksi više nisu samo mesta za stanovanje – gosti i kupci danas traže kompletan ugođaj i hotelski komfor u sopstvenom aranžmanu.",
+          "Objekti koji u svom sastavu nude zatvorene ili otvorene bazene, spa centre, fitnes sale i panoramske liftove ostvaruju drastično veću popunjenost na platformama poput Booking-a i Airbnb-a.",
+          "Takođe, ovakvi sadržaji znatno podižu cenu izdavanja po noćenju i čine nekretninu atraktivnijom na tržištu nekretnina, obezbeđujući brži povrat uloženog novca."
+        ]
+      }
+    };
+
+    // Sigurno sortiranje stanova po objektu i nazivu
+    stanovi.sort(function(a, b) {
+      var objA = (a.objekat || '').trim();
+      var objB = (b.objekat || '').trim();
+      if (objA !== objB) {
+        return objA.localeCompare(objB);
+      }
+      var nazivA = (a.naslov || '').trim();
+      var nazivB = (b.naslov || '').trim();
+      return nazivA.localeCompare(nazivB, 'sr', { numeric: true, sensitivity: 'base' });
+    });
+
+    function formatStanova(broj) {
+      var mod100 = broj % 100;
+      var mod10 = broj % 10;
+      if (mod100 >= 11 && mod100 <= 14) return broj + " stanova";
+      if (mod10 === 1) return broj + " stan";
+      if (mod10 >= 2 && mod10 <= 4) return broj + " stana";
+      return broj + " stanova";
+    }
+
+    function toggleMeni() {
+      var meni = document.getElementById('glavniMeni');
+      var ikonica = document.getElementById('hamburgerIkonica');
+      var centar = document.querySelector('.header-center');
+
+      if (meni) {
+        var jeOtvoren = meni.classList.toggle('mobile-active');
+        if (centar) centar.style.display = jeOtvoren ? 'block' : '';
+        if (ikonica) {
+          ikonica.className = jeOtvoren ? 'fas fa-times' : 'fas fa-bars';
+        }
+      }
+    }
+
+    function zatvoriMeni() {
+      var meni = document.getElementById('glavniMeni');
+      var ikonica = document.getElementById('hamburgerIkonica');
+      var centar = document.querySelector('.header-center');
+
+      if (meni && meni.classList.contains('mobile-active')) {
+        meni.classList.remove('mobile-active');
+        if (centar) centar.style.display = '';
+        if (ikonica) ikonica.className = 'fas fa-bars';
+      }
+    }
+
+    function popuniFiltere() {
+      var redosledTipova = [
+        "garsonjera", "jednosoban", "jednoiposoban", "dvosoban", 
+        "dvoiposoban", "trosoban", "troiposoban", "cetvorosoban", "dupleks", "penthaus"
+      ];
+
+      var redosledSpratova = [
+        "suteren", "prizemlje", "visoko prizemlje", 
+        "1", "1. sprat", "2", "2. sprat", "3", "3. sprat", "4", "4. sprat", "5", "5. sprat", 
+        "potkrovlje", "povučeni sprat", "povuceni sprat"
+      ];
+
+      var objekti = [...new Set(stanovi.map(s => s.objekat).filter(Boolean))].sort();
+      var selObj = document.getElementById('selObjekat');
+      if (selObj) {
+        objekti.forEach(function(o) {
+          var opt = document.createElement('option');
+          opt.value = o;
+          opt.textContent = o;
+          selObj.appendChild(opt);
+        });
+      }
+
+      var tipoviUBazi = [...new Set(stanovi.map(s => s.tip).filter(Boolean))];
+      tipoviUBazi.sort(function(a, b) {
+        var iA = redosledTipova.findIndex(t => a.toLowerCase().includes(t));
+        var iB = redosledTipova.findIndex(t => b.toLowerCase().includes(t));
+        if (iA === -1) iA = 999;
+        if (iB === -1) iB = 999;
+        return iA - iB;
+      });
+
+      var selTip = document.getElementById('selTip');
+      if (selTip) {
+        tipoviUBazi.forEach(function(t) {
+          var opt = document.createElement('option');
+          opt.value = t;
+          opt.textContent = t;
+          selTip.appendChild(opt);
+        });
+      }
+
+      var spratoviUBazi = [...new Set(stanovi.map(s => s.sprat).filter(Boolean))];
+      spratoviUBazi.sort(function(a, b) {
+        var iA = redosledSpratova.findIndex(s => a.toLowerCase().includes(s));
+        var iB = redosledSpratova.findIndex(s => b.toLowerCase().includes(s));
+        if (iA === -1) iA = 999;
+        if (iB === -1) iB = 999;
+        return iA - iB;
+      });
+
+      var selSprat = document.getElementById('selSprat');
+      if (selSprat) {
+        spratoviUBazi.forEach(function(s) {
+          var opt = document.createElement('option');
+          opt.value = s;
+          opt.textContent = s;
+          selSprat.appendChild(opt);
+        });
+      }
+    }
+
+    function filtrirajPoObjektu(naziv) {
+      var sel = document.getElementById('selObjekat');
+      if (sel) {
+        for (var i = 0; i < sel.options.length; i++) {
+          if (sel.options[i].value.toLowerCase().includes(naziv.toLowerCase())) {
+            sel.selectedIndex = i;
+            break;
+          }
+        }
+      }
+      filtriraj();
+      var kat = document.getElementById('katalog');
+      if (kat) kat.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function popuniPreporucene() {
+      var kontejner = document.getElementById('istaknutiStanovi');
+      if (!kontejner) return;
+      kontejner.innerHTML = '';
+
+      var preporuceniStanovi = stanovi.filter(function(s) {
+        var obj = (s.objekat || '').toLowerCase();
+        return obj.includes('rada') || obj.includes('jezero');
+      });
+
+      preporuceniStanovi.slice(0, 6).forEach(function(s) {
+        var el = document.createElement('div');
+        el.className = 'rec-card';
+        el.onclick = function() { otvoriModal(s.id); };
+        el.innerHTML = 
+          '<div style="height: 180px; position: relative; background: #fff; padding: 6px;">' +
+            '<span style="position: absolute; top: 10px; left: 10px; background: var(--primary); color: #fff; font-size: 0.7rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase;">Preporuka</span>' +
+            '<img src="' + (s.slika || 'slike/naslovna.webp') + '" alt="' + (s.naslov || '') + '" onerror="this.src=\'slike/naslovna.webp\'" style="width: 100%; height: 100%; object-fit: contain;">' +
+          '</div>' +
+          '<div style="padding: 16px; display: flex; flex-direction: column; flex-grow: 1;">' +
+            '<span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); text-transform: uppercase;">' + (s.objekat || '') + '</span>' +
+            '<h4 style="font-size: 1.05rem; font-weight: 700; color: var(--dark); margin: 4px 0 10px;">' + (s.naslov || '') + '</h4>' +
+            '<div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: #64748B; padding: 8px 0; border-top: 1px solid #F1F5F9; border-bottom: 1px solid #F1F5F9;">' +
+              '<span>' + (s.kvadratura ? s.kvadratura.toFixed(2) : '') + ' m²</span>' +
+              '<span>' + (s.sobe || '') + ' sobe</span>' +
+              '<span>' + (s.sprat || '') + '</span>' +
+            '</div>' +
+          '</div>';
+        kontejner.appendChild(el);
+      });
+    }
+
+    function filtriraj() {
+      var tekst = (document.getElementById('selTekst') ? document.getElementById('selTekst').value : '').trim().toLowerCase();
+      var objekat = document.getElementById('selObjekat') ? document.getElementById('selObjekat').value : '';
+      var tip = document.getElementById('selTip') ? document.getElementById('selTip').value : '';
+      var sprat = document.getElementById('selSprat') ? document.getElementById('selSprat').value : '';
+      var minM2 = parseFloat(document.getElementById('inM2Min') ? document.getElementById('inM2Min').value : 0) || 0;
+      var maxM2 = parseFloat(document.getElementById('inM2Max') ? document.getElementById('inM2Max').value : Infinity) || Infinity;
+
+      var rezultat = stanovi.filter(function(s) {
+        var punTekst = ((s.naslov || s.naziv || '') + ' ' + (s.objekat || s.zgrada || '') + ' ' + (s.opis || '')).toLowerCase();
+        var poklapaTekst = !tekst || punTekst.indexOf(tekst) !== -1;
+
+        var sObjekat = s.objekat || s.zgrada || '';
+        var poklapaObj = !objekat || sObjekat === objekat;
+
+        var sTip = s.tip || s.struktura || '';
+        var poklapaTip = !tip || sTip === tip;
+
+        var sSprat = String(s.sprat || '');
+        var poklapaSprat = !sprat || sSprat === sprat;
+
+        var m2 = parseFloat(s.kvadratura || s.povrsina || s.m2 || 0);
+        var poklapaM2 = m2 >= minM2 && m2 <= maxM2;
+
+        return poklapaTekst && poklapaObj && poklapaTip && poklapaSprat && poklapaM2;
+      });
+
+      iscrtajKartice(rezultat);
+    }
+
+    function iscrtajKartice(lista) {
+      var kontejner = document.getElementById('gridStanova');
+      var brojac = document.getElementById('brojacPrikaza');
+      var nemaRezultata = document.getElementById('nemaRezultata');
+      if (!kontejner) return;
+
+      if (brojac) {
+        brojac.textContent = "Prikazano: " + lista.length + " od ukupno " + formatStanova(stanovi.length);
+      }
+      kontejner.innerHTML = '';
+
+      if (lista.length === 0) {
+        if (nemaRezultata) nemaRezultata.style.display = 'block';
+        return;
+      }
+      if (nemaRezultata) nemaRezultata.style.display = 'none';
+
+      lista.forEach(function(s) {
+        var card = document.createElement('div');
+        card.className = 'prop-card';
+        card.innerHTML = 
+          '<div class="prop-img-wrap" onclick="otvoriModal(' + s.id + ')">' +
+            '<span class="prop-badge">' + (s.status || 'Slobodan') + '</span>' +
+            '<span class="prop-price">Cena na upit</span>' +
+            '<img src="' + (s.slika || 'slike/naslovna.webp') + '" alt="' + (s.naslov || '') + '" loading="lazy" onerror="this.src=\'slike/naslovna.webp\'">' +
+          '</div>' +
+          '<div class="prop-body">' +
+            '<div class="prop-loc"><i class="fas fa-map-marker-alt"></i> ' + (s.objekat || '') + '</div>' +
+            '<h3 class="prop-title" onclick="otvoriModal(' + s.id + ')">' + (s.naslov || '') + '</h3>' +
+            '<ul class="prop-specs">' +
+              '<li><i class="fas fa-ruler-combined"></i> ' + (s.kvadratura ? s.kvadratura.toFixed(2) : '') + ' m²</li>' +
+              '<li><i class="fas fa-bed"></i> ' + (s.sobe || '') + ' sob.</li>' +
+              '<li><i class="fas fa-bath"></i> ' + (s.kupatila || 1) + ' kup.</li>' +
+              '<li><i class="fas fa-stairs"></i> ' + (s.sprat || '') + '</li>' +
+            '</ul>' +
+            '<div class="prop-actions">' +
+              '<button class="btn-detalji" onclick="otvoriModal(' + s.id + ')">Detalji</button>' +
+              '<a href="tel:' + telBroj + '" class="btn-icon-action" title="Pozovi"><i class="fas fa-phone-alt"></i></a>' +
+              '<a href="https://wa.me/' + telBroj.replace(/[^0-9]/g, '') + '?text=Zanima%20me%20' + encodeURIComponent(s.naslov || '') + '%20(' + encodeURIComponent(s.objekat || '') + ')" target="_blank" class="btn-icon-action" title="WhatsApp" style="color: #25D366;"><i class="fab fa-whatsapp"></i></a>' +
+            '</div>' +
+          '</div>';
+        kontejner.appendChild(card);
+      });
+    }
+
+    function otvoriModal(id) {
+      var stan = stanovi.find(function(s) { return s.id === id; });
+      if (!stan) return;
+
+      var modalSlika = document.getElementById('modalSlika');
+      if (modalSlika) {
+        modalSlika.src = stan.slika || 'slike/naslovna.webp';
+        modalSlika.onerror = function() { modalSlika.src = 'slike/naslovna.webp'; };
+      }
+      document.getElementById('modalNaslov').textContent = stan.naslov || '';
+      document.getElementById('modalObjekat').textContent = (stan.objekat || '') + ' • ' + (stan.ulica || 'Vrnjačka Banja');
+      document.getElementById('modalLokacija').textContent = stan.grad || 'Vrnjačka Banja';
+
+      document.getElementById('specObjekat').textContent = stan.objekat || '-';
+      document.getElementById('specSprat').textContent = stan.sprat || '-';
+      document.getElementById('specM2').textContent = (stan.kvadratura ? stan.kvadratura.toFixed(2) : '-') + ' m²';
+      document.getElementById('specSobe').textContent = stan.sobe || '-';
+      document.getElementById('specKupatila').textContent = stan.kupatila || '1';
+
+      var galerijaWrap = document.getElementById('modalGalerijaWrap');
+      var galerijaSlike = document.getElementById('modalGalerijaSlike');
+      galerijaSlike.innerHTML = '';
+      
+      if (stan.galerija && Array.isArray(stan.galerija) && stan.galerija.length > 0) {
+        galerijaWrap.style.display = 'block';
+        stan.galerija.forEach(function(imgSrc) {
+          var img = document.createElement('img');
+          img.src = imgSrc;
+          img.onclick = function() { modalSlika.src = imgSrc; };
+          galerijaSlike.appendChild(img);
+        });
+      } else {
+        galerijaWrap.style.display = 'none';
+      }
+
+      var prostorijeBox = document.getElementById('modalProstorijeBox');
+      var prostorijeList = document.getElementById('modalProstorijeList');
+      prostorijeList.innerHTML = '';
+
+      if (stan.prostorije && typeof stan.prostorije === 'object' && Object.keys(stan.prostorije).length > 0) {
+        prostorijeBox.style.display = 'block';
+        for (var naziv in stan.prostorije) {
+          if (stan.prostorije.hasOwnProperty(naziv)) {
+            var li = document.createElement('li');
+            li.innerHTML = '<span>' + naziv + ':</span> <strong>' + stan.prostorije[naziv] + '</strong>';
+            prostorijeList.appendChild(li);
+          }
+        }
+      } else {
+        prostorijeBox.style.display = 'none';
+      }
+
+      document.getElementById('modalCallBtn').href = 'tel:' + telBroj;
+      document.getElementById('modalWaBtn').href = 'https://wa.me/' + telBroj.replace(/[^0-9]/g, '') + '?text=Pozdrav,%20zanima%20me%20ponuda%20za:%20' + encodeURIComponent(stan.naslov || '') + '%20(' + encodeURIComponent(stan.objekat || '') + ')';
+
+      document.getElementById('modalStan').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function zatvoriModal() {
+      document.getElementById('modalStan').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    function otvoriBlog(id) {
+      var b = blogTekstovi[id];
+      if (!b) return;
+
+      document.getElementById('blogModalDatum').textContent = b.datum;
+      document.getElementById('blogModalNaslov').textContent = b.naslov;
+      
+      var kontejnerP = document.getElementById('blogModalSadrzaj');
+      kontejnerP.innerHTML = '';
+      b.sadrzaj.forEach(function(paragraf) {
+        var p = document.createElement('p');
+        p.textContent = paragraf;
+        kontejnerP.appendChild(p);
+      });
+
+      document.getElementById('modalBlog').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function zatvoriBlogModal() {
+      document.getElementById('modalBlog').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+
+    window.onclick = function(e) {
+      var modalStan = document.getElementById('modalStan');
+      var modalBlog = document.getElementById('modalBlog');
+      if (e.target === modalStan) zatvoriModal();
+      if (e.target === modalBlog) zatvoriBlogModal();
+    };
+
+    ['selObjekat', 'selTip', 'selSprat'].forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) el.onchange = filtriraj;
+    });
+    ['selTekst', 'inM2Min', 'inM2Max'].forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) el.oninput = filtriraj;
+    });
+
+    var btnP = document.getElementById('btnPretrazi');
+    if (btnP) {
+      btnP.onclick = function() {
+        filtriraj();
+        var kat = document.getElementById('katalog');
+        if (kat) kat.scrollIntoView({ behavior: 'smooth' });
+      };
+    }
+
+    var inTekst = document.getElementById('selTekst');
+    if (inTekst) {
+      inTekst.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          filtriraj();
+          var kat = document.getElementById('katalog');
+          if (kat) kat.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    }
+
+    var btnR = document.getElementById('btnReset');
+    if (btnR) {
+      btnR.onclick = function() {
+        if (document.getElementById('selTekst')) document.getElementById('selTekst').value = '';
+        if (document.getElementById('selObjekat')) document.getElementById('selObjekat').value = '';
+        if (document.getElementById('selTip')) document.getElementById('selTip').value = '';
+        if (document.getElementById('selSprat')) document.getElementById('selSprat').value = '';
+        if (document.getElementById('inM2Min')) document.getElementById('inM2Min').value = '';
+        if (document.getElementById('inM2Max')) document.getElementById('inM2Max').value = '';
+        filtriraj();
+      };
+    }
+
+    popuniFiltere();
+    popuniPreporucene();
+    filtriraj();
+  </script>
+</body>
+</html>

@@ -712,6 +712,19 @@
       .hero p { font-size: 0.92rem; }
       .hero-content { margin-bottom: 12px; }
       .search-box { transform: none; padding: 16px; }
+      .search-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      .search-col { flex: none; width: auto; }
+      .search-col:nth-child(-n+3) { grid-column: 1 / -1; }
+      .search-actions {
+        grid-column: 1 / -1;
+        display: flex !important;
+        width: 100%;
+      }
+      .search-actions .btn-search-main { flex: 1; }
       .objects-section { padding-top: 60px; }
       .modal-prostorije-list { grid-template-columns: 1fr; }
     }

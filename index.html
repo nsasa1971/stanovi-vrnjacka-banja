@@ -110,6 +110,63 @@
     }
     .btn-call-nav:hover { background: var(--primary-hover); }
 
+    .nav-call-item { display: none; }
+    @media (max-width: 991px) {
+      .btn-call-nav { display: none; }
+      .nav-call-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background: var(--primary);
+        color: #fff !important;
+        padding: 12px 18px;
+        border-radius: var(--radius);
+        font-weight: 600;
+        margin-top: 4px;
+      }
+    }
+
+    .katalog-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin: 25px 0 35px;
+    }
+    .tab-btn {
+      background: #F1F5F9;
+      color: var(--dark);
+      border: 1px solid var(--border);
+      padding: 10px 20px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.88rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab-btn:hover { background: #E2E8F0; }
+    .tab-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    .btn-prikazi-jos {
+      display: block;
+      margin: 35px auto 0;
+      background: var(--dark);
+      color: #fff;
+      border: none;
+      padding: 13px 34px;
+      border-radius: var(--radius);
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-prikazi-jos:hover { background: var(--primary); }
+
     .hamburger-btn {
       display: none;
       background: #F8FAFC;
@@ -681,6 +738,11 @@
           <li><a href="#o-nama" onclick="zatvoriMeni()">O nama</a></li>
           <li><a href="#blog" onclick="zatvoriMeni()">Blog</a></li>
           <li><a href="#kontakt" onclick="zatvoriMeni()">Kontakt</a></li>
+          <li class="nav-call-item">
+            <a href="tel:+381653268722" style="color:#fff; text-decoration:none; display:flex; align-items:center; gap:8px;">
+              <i class="fas fa-phone-alt"></i> (+381) 65 326 87 22
+            </a>
+          </li>
         </ul>
       </nav>
 
@@ -817,7 +879,17 @@
         <p id="brojacPrikaza">Učitavanje ponude stanova...</p>
       </div>
 
+      <div class="katalog-tabs" id="katalogTabovi">
+        <button type="button" class="tab-btn active" data-objekat="" onclick="postaviObjekatFilter('')">Svi stanovi</button>
+        <button type="button" class="tab-btn" data-objekat="Rada Vilotijevića" onclick="postaviObjekatFilter('Rada Vilotijevića')">Rada Vilotijevića</button>
+        <button type="button" class="tab-btn" data-objekat="Heroja Čajke" onclick="postaviObjekatFilter('Heroja Čajke')">Heroja Čajke</button>
+        <button type="button" class="tab-btn" data-objekat="Jezero" onclick="postaviObjekatFilter('Jezero')">Jezero</button>
+        <button type="button" class="tab-btn" data-objekat="Porta Infinitas" onclick="postaviObjekatFilter('Porta Infinitas')">Porta Infinitas</button>
+      </div>
+
       <div class="catalog-grid" id="gridStanova"></div>
+
+      <button type="button" class="btn-prikazi-jos" id="btnPrikaziJos" style="display:none;" onclick="prikaziJos()">Prikaži još</button>
 
       <div id="nemaRezultata" style="display: none; text-align: center; padding: 50px 20px;">
         <i class="fas fa-search" style="font-size: 2.5rem; color: #CBD5E1; margin-bottom: 15px;"></i>
@@ -1198,19 +1270,35 @@
       }
     }
 
-    function filtrirajPoObjektu(naziv) {
+    function osveziAktivniTab(naziv) {
+      var tabovi = document.querySelectorAll('.tab-btn');
+      tabovi.forEach(function(t) {
+        t.classList.toggle('active', (t.getAttribute('data-objekat') || '') === (naziv || ''));
+      });
+    }
+
+    function postaviObjekatFilter(naziv) {
       var sel = document.getElementById('selObjekat');
       if (sel) {
-        for (var i = 0; i < sel.options.length; i++) {
-          if (sel.options[i].value.toLowerCase().includes(naziv.toLowerCase())) {
-            sel.selectedIndex = i;
-            break;
+        if (!naziv) {
+          sel.selectedIndex = 0;
+        } else {
+          for (var i = 0; i < sel.options.length; i++) {
+            if (sel.options[i].value.toLowerCase().includes(naziv.toLowerCase())) {
+              sel.selectedIndex = i;
+              break;
+            }
           }
         }
       }
+      osveziAktivniTab(naziv);
       filtriraj();
       var kat = document.getElementById('katalog');
       if (kat) kat.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function filtrirajPoObjektu(naziv) {
+      postaviObjekatFilter(naziv);
     }
 
     function popuniPreporucene() {
@@ -1245,6 +1333,10 @@
       });
     }
 
+    var PRIKAZANO_PO_STRANI = 12;
+    var trenutnoPrikazano = PRIKAZANO_PO_STRANI;
+    var trenutniRezultati = [];
+
     function filtriraj() {
       var tekst = (document.getElementById('selTekst') ? document.getElementById('selTekst').value : '').trim().toLowerCase();
       var objekat = document.getElementById('selObjekat') ? document.getElementById('selObjekat').value : '';
@@ -1272,19 +1364,33 @@
         return poklapaTekst && poklapaObj && poklapaTip && poklapaSprat && poklapaM2;
       });
 
-      iscrtajKartice(rezultat);
+      trenutniRezultati = rezultat;
+      trenutnoPrikazano = PRIKAZANO_PO_STRANI;
+      iscrtajKartice(trenutniRezultati.slice(0, trenutnoPrikazano), trenutniRezultati.length);
     }
 
-    function iscrtajKartice(lista) {
+    function prikaziJos() {
+      trenutnoPrikazano += PRIKAZANO_PO_STRANI;
+      iscrtajKartice(trenutniRezultati.slice(0, trenutnoPrikazano), trenutniRezultati.length);
+    }
+
+    function iscrtajKartice(lista, ukupnoPronadjeno) {
       var kontejner = document.getElementById('gridStanova');
       var brojac = document.getElementById('brojacPrikaza');
       var nemaRezultata = document.getElementById('nemaRezultata');
+      var btnJos = document.getElementById('btnPrikaziJos');
       if (!kontejner) return;
 
+      if (typeof ukupnoPronadjeno !== 'number') ukupnoPronadjeno = lista.length;
+
       if (brojac) {
-        brojac.textContent = "Prikazano: " + lista.length + " od ukupno " + formatStanova(stanovi.length);
+        brojac.textContent = "Prikazano: " + lista.length + " od " + ukupnoPronadjeno + " pronađenih";
       }
       kontejner.innerHTML = '';
+
+      if (btnJos) {
+        btnJos.style.display = (lista.length < ukupnoPronadjeno) ? 'block' : 'none';
+      }
 
       if (lista.length === 0) {
         if (nemaRezultata) nemaRezultata.style.display = 'block';
@@ -1415,7 +1521,14 @@
       if (e.target === modalBlog) zatvoriBlogModal();
     };
 
-    ['selObjekat', 'selTip', 'selSprat'].forEach(function(id) {
+    var selObjekatEl = document.getElementById('selObjekat');
+    if (selObjekatEl) {
+      selObjekatEl.onchange = function() {
+        osveziAktivniTab(selObjekatEl.value);
+        filtriraj();
+      };
+    }
+    ['selTip', 'selSprat'].forEach(function(id) {
       var el = document.getElementById(id);
       if (el) el.onchange = filtriraj;
     });
@@ -1453,6 +1566,7 @@
         if (document.getElementById('selSprat')) document.getElementById('selSprat').value = '';
         if (document.getElementById('inM2Min')) document.getElementById('inM2Min').value = '';
         if (document.getElementById('inM2Max')) document.getElementById('inM2Max').value = '';
+        osveziAktivniTab('');
         filtriraj();
       };
     }

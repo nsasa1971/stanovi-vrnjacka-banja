@@ -910,9 +910,10 @@
         <div class="contact-info-col">
           <h3>KONTAKT PODACI</h3>
           <ul class="contact-info-list">
-            <li><strong>Email:</strong> <a href="mailto:admin@stanovivbanja.com">admin@stanovivbanja.com</a></li>
+            <li><strong>Email:</strong> <a href="mailto:stevica.inovacije@gmail.com">stevica.inovacije@gmail.com</a></li>
             <li><strong>Telefon:</strong> <a href="tel:+381653268722">(+381) 65 326 87 22</a></li>
-            <li><strong>Adresa:</strong> Ive Andrića 3 i Heroja Čajke 14, Vrnjačka Banja, Srbija</li>
+            <li><strong>Adresa:</strong> Slatinski venac 13b, Vrnjačka Banja, Srbija</li>
+            <li><strong>Lokacije objekata:</strong> Ive Andrića 3 i Heroja Čajke 14, Vrnjačka Banja</li>
           </ul>
 
           <div class="contact-hours">
@@ -924,11 +925,15 @@
         </div>
 
         <div class="contact-form-col">
-          <form onsubmit="event.preventDefault(); alert('Hvala Vam! Vaša poruka je uspešno poslata.'); this.reset();">
-            <input type="text" placeholder="Vaše ime*" required>
-            <input type="email" placeholder="Vaš email*" required>
-            <input type="text" placeholder="Naslov">
-            <textarea placeholder="Vaša poruka" required></textarea>
+          <form name="kontakt-forma" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="kontaktForma">
+            <input type="hidden" name="form-name" value="kontakt-forma" />
+            <p style="display:none;">
+              <label>Ne popunjavajte ovo polje: <input name="bot-field" /></label>
+            </p>
+            <input type="text" name="ime" placeholder="Vaše ime*" required>
+            <input type="email" name="email" placeholder="Vaš email*" required>
+            <input type="text" name="naslov" placeholder="Naslov">
+            <textarea name="poruka" placeholder="Vaša poruka" required></textarea>
             <button type="submit" class="btn-primary-submit">POŠALJI</button>
           </form>
         </div>
@@ -961,10 +966,10 @@
       <div class="footer-col" style="flex: 1 1 260px;">
         <h3>Kontakt</h3>
         <ul>
-          <li><i class="fas fa-map-marker-alt" style="color: var(--primary); width: 16px;"></i> Ive Andrića 3 & Heroja Čajke 14</li>
+          <li><i class="fas fa-map-marker-alt" style="color: var(--primary); width: 16px;"></i> Slatinski venac 13b, Vrnjačka Banja</li>
           <li><i class="fas fa-phone-alt" style="color: var(--primary); width: 16px;"></i> <a href="tel:+381653268722">(+381) 65 326 87 22</a></li>
           <li><i class="fab fa-whatsapp" style="color: #25D366; width: 16px;"></i> <a href="https://wa.me/381653268722" target="_blank" style="color: #25D366;">WhatsApp kontakt</a></li>
-          <li><i class="fas fa-envelope" style="color: var(--primary); width: 16px;"></i> admin@stanovivbanja.com</li>
+          <li><i class="fas fa-envelope" style="color: var(--primary); width: 16px;"></i> stevica.inovacije@gmail.com</li>
         </ul>
       </div>
     </div>
@@ -980,6 +985,14 @@
   <!-- DUGME ZA VRH -->
   <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" style="position: fixed; bottom: 25px; right: 25px; width: 44px; height: 44px; background: var(--primary); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.25); text-decoration: none; z-index: 99;">
     <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- PLUTAJUĆE WHATSAPP DUGME -->
+  <a href="https://wa.me/381653268722?text=Pozdrav%2C%20zanima%20me%20ponuda%20za%20stanove%20u%20Vrnjačkoj%20Banji"
+     target="_blank" rel="noopener"
+     title="Pišite nam na WhatsApp"
+     style="position: fixed; bottom: 25px; left: 25px; width: 56px; height: 56px; background: #25D366; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.25); text-decoration: none; z-index: 99; font-size: 1.6rem;">
+    <i class="fab fa-whatsapp"></i>
   </a>
 
   <!-- MODAL ZA BRZI PREGLED STANA -->
@@ -1447,6 +1460,35 @@
     popuniFiltere();
     popuniPreporucene();
     filtriraj();
+
+    // Slanje kontakt forme ka Netlify Forms (bez osvezavanja stranice)
+    var kontaktForma = document.getElementById('kontaktForma');
+    if (kontaktForma) {
+      kontaktForma.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var dugme = kontaktForma.querySelector('button[type="submit"]');
+        var originalniTekst = dugme ? dugme.textContent : '';
+        if (dugme) { dugme.disabled = true; dugme.textContent = 'Šaljem...'; }
+
+        var podaci = new URLSearchParams(new FormData(kontaktForma)).toString();
+
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: podaci
+        })
+          .then(function () {
+            alert('Hvala Vam! Vaša poruka je uspešno poslata.');
+            kontaktForma.reset();
+          })
+          .catch(function () {
+            alert('Došlo je do greške pri slanju. Pokušajte ponovo ili nas kontaktirajte direktno na email/telefon.');
+          })
+          .finally(function () {
+            if (dugme) { dugme.disabled = false; dugme.textContent = originalniTekst; }
+          });
+      });
+    }
   </script>
 </body>
 </html>

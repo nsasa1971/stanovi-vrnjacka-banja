@@ -710,7 +710,19 @@
       }
       .hero h1 { font-size: 1.8rem; }
       .hero-content { margin-bottom: 15px; }
-      .search-box { transform: translateY(8%); }
+      .search-box { transform: translateY(8%); padding: 18px; }
+      .search-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      .search-col { flex: none; width: auto; }
+      .search-actions {
+        grid-column: 1 / -1;
+        display: flex !important;
+        width: 100%;
+      }
+      .search-actions .btn-search-main { flex: 1; }
       .objects-section { padding-top: 110px; }
       .modal-prostorije-list { grid-template-columns: 1fr; }
     }
@@ -722,14 +734,14 @@
   <header class="header">
     <div class="container header-inner">
       <div class="header-left">
-        <a href="#" class="logo">
+        <a href="#" class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
           <img src="slike/logo.png" alt="Stanovi Vrnjačka Banja" onerror="this.outerHTML='<span style=\'font-size:1.4rem;font-weight:700;color:#1E293B;\'>Stanovi <strong style=\'color:#FF385C;\'>VB</strong></span>'">
         </a>
       </div>
 
       <nav class="header-center">
         <ul class="nav-links" id="glavniMeni">
-          <li><a href="#" onclick="zatvoriMeni()">Početna</a></li>
+          <li><a href="#" onclick="zatvoriMeni(); window.scrollTo({top:0,behavior:'smooth'}); return false;">Početna</a></li>
           <li class="nav-item-dropdown">
             <a href="#objekti" onclick="zatvoriMeni()">Objekti <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i></a>
             <ul class="dropdown-menu">
@@ -792,7 +804,7 @@
             <label>Maks m²</label>
             <input type="number" id="inM2Max" placeholder="Do">
           </div>
-          <div style="flex: 0 0 auto; display: flex; gap: 8px; align-items: flex-end;">
+          <div class="search-actions" style="flex: 0 0 auto; display: flex; gap: 8px; align-items: flex-end;">
             <button id="btnPretrazi" type="button" class="btn-search-main">
               <i class="fas fa-search"></i> Pretraži
             </button>
@@ -1055,7 +1067,7 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-col" style="flex: 1 1 320px;">
-        <a href="#" class="footer-logo">
+        <a href="#" class="footer-logo" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
           <img src="slike/logo_white.png" alt="Stanovi Vrnjačka Banja" onerror="this.outerHTML='<span style=\'font-size:1.4rem;font-weight:700;color:#fff;\'>Stanovi <strong style=\'color:#FF385C;\'>VB</strong></span>'">
         </a>
         <p style="font-size: 0.9rem; line-height: 1.6; color: #94A3B8;">
@@ -1066,7 +1078,7 @@
       <div class="footer-col" style="flex: 1 1 180px;">
         <h3>Navigacija</h3>
         <ul>
-          <li><a href="#">Početna strana</a></li>
+          <li><a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">Početna strana</a></li>
           <li><a href="#objekti">Objekti</a></li>
           <li><a href="#o-nama">O nama</a></li>
           <li><a href="#blog">Blog</a></li>

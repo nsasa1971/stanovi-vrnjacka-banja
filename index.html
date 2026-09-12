@@ -734,14 +734,14 @@
   <header class="header">
     <div class="container header-inner">
       <div class="header-left">
-        <a href="#" class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
+        <a href="#" class="logo" onclick="return idiNaPocetak();">
           <img src="slike/logo.png" alt="Stanovi Vrnjačka Banja" onerror="this.outerHTML='<span style=\'font-size:1.4rem;font-weight:700;color:#1E293B;\'>Stanovi <strong style=\'color:#FF385C;\'>VB</strong></span>'">
         </a>
       </div>
 
       <nav class="header-center">
         <ul class="nav-links" id="glavniMeni">
-          <li><a href="#" onclick="zatvoriMeni(); window.scrollTo({top:0,behavior:'smooth'}); return false;">Početna</a></li>
+          <li><a href="#" onclick="zatvoriMeni(); return idiNaPocetak();">Početna</a></li>
           <li class="nav-item-dropdown">
             <a href="#objekti" onclick="zatvoriMeni()">Objekti <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i></a>
             <ul class="dropdown-menu">
@@ -1067,7 +1067,7 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-col" style="flex: 1 1 320px;">
-        <a href="#" class="footer-logo" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">
+        <a href="#" class="footer-logo" onclick="return idiNaPocetak();">
           <img src="slike/logo_white.png" alt="Stanovi Vrnjačka Banja" onerror="this.outerHTML='<span style=\'font-size:1.4rem;font-weight:700;color:#fff;\'>Stanovi <strong style=\'color:#FF385C;\'>VB</strong></span>'">
         </a>
         <p style="font-size: 0.9rem; line-height: 1.6; color: #94A3B8;">
@@ -1078,7 +1078,7 @@
       <div class="footer-col" style="flex: 1 1 180px;">
         <h3>Navigacija</h3>
         <ul>
-          <li><a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">Početna strana</a></li>
+          <li><a href="#" onclick="return idiNaPocetak();">Početna strana</a></li>
           <li><a href="#objekti">Objekti</a></li>
           <li><a href="#o-nama">O nama</a></li>
           <li><a href="#blog">Blog</a></li>
@@ -1105,7 +1105,7 @@
   </footer>
 
   <!-- DUGME ZA VRH -->
-  <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" style="position: fixed; bottom: 25px; right: 25px; width: 44px; height: 44px; background: var(--primary); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.25); text-decoration: none; z-index: 99;">
+  <a href="#" onclick="return idiNaPocetak();" style="position: fixed; bottom: 25px; right: 25px; width: 44px; height: 44px; background: var(--primary); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.25); text-decoration: none; z-index: 99;">
     <i class="fas fa-arrow-up"></i>
   </a>
 
@@ -1267,6 +1267,14 @@
           ikonica.className = jeOtvoren ? 'fas fa-times' : 'fas fa-bars';
         }
       }
+    }
+
+    function idiNaPocetak() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (window.location.hash) {
+        history.replaceState(null, '', window.location.pathname + window.location.search);
+      }
+      return false;
     }
 
     function zatvoriMeni() {

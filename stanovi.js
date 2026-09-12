@@ -1150,7 +1150,7 @@ const podaciStanovi = [
     "kvadratura": 32.53,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4192.webp",
+    "slika": "slike/P1S1.webp",
     "url": "/stanovi/porta-infinitas/jednosoban/porta-1-stan-1/",
     "prostorije": {
       "Hodnik": "2,22 m²",
@@ -1158,10 +1158,7 @@ const podaciStanovi = [
       "Kupatilo": "3,27 m²"
     },
     "galerija": [
-      "slike/P1OsnovaSuteren.webp",
-      "slike/P1S1.webp",
-      "slike/O1SUTST1.svg",
-      "slike/P1-Stan-1.webp"
+      "slike/P1S1.webp"
     ]
   },
   {
@@ -1177,7 +1174,7 @@ const podaciStanovi = [
     "kvadratura": 33.25,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4209.webp",
+    "slika": "slike/P1S2.webp",
     "url": "/stanovi/porta-infinitas/jednosoban/porta-1-stan-2/",
     "prostorije": {
       "Hodnik": "2,35 m²",
@@ -1186,7 +1183,6 @@ const podaciStanovi = [
       "Lođa": "3,61 m²"
     },
     "galerija": [
-      "slike/P1-Stan-2.webp",
       "slike/P1S2.webp"
     ]
   },
@@ -1203,7 +1199,7 @@ const podaciStanovi = [
     "kvadratura": 37.12,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4211.webp",
+    "slika": "slike/P1S3.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-1-stan-3/",
     "prostorije": {
       "Hodnik": "6,47 m²",
@@ -1213,8 +1209,7 @@ const podaciStanovi = [
       "Terasa": "3,61 m²"
     },
     "galerija": [
-      "slike/P1S3.webp",
-      "slike/P1-Stan-3.webp"
+      "slike/P1S3.webp"
     ]
   },
   {
@@ -1230,7 +1225,7 @@ const podaciStanovi = [
     "kvadratura": 29.92,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4215.webp",
+    "slika": "slike/P1S4.webp",
     "url": "/stanovi/porta-infinitas/garsonjera/porta-1-stan-4/",
     "prostorije": {
       "DB + TRP": "23,60 m²",
@@ -1238,7 +1233,6 @@ const podaciStanovi = [
       "Terasa": "3,18 m²"
     },
     "galerija": [
-      "slike/P1Stan-4.webp",
       "slike/P1S4.webp"
     ]
   },
@@ -1255,7 +1249,7 @@ const podaciStanovi = [
     "kvadratura": 31.65,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4217.webp",
+    "slika": "slike/P1S5.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-1-stan-5/",
     "prostorije": {
       "Hodnik": "4,76 m²",
@@ -1265,7 +1259,6 @@ const podaciStanovi = [
       "Terasa": "3,26 m²"
     },
     "galerija": [
-      "slike/P1S5.webp",
       "slike/P1S5.webp"
     ]
   },
@@ -1282,7 +1275,7 @@ const podaciStanovi = [
     "kvadratura": 32.06,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4220.webp",
+    "slika": "slike/P1S6.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-1-stan-6/",
     "prostorije": {
       "Hodnik": "4,86 m²",
@@ -1292,7 +1285,6 @@ const podaciStanovi = [
       "Terasa": "3,26 m²"
     },
     "galerija": [
-      "slike/P1Stan6.webp",
       "slike/P1S6.webp"
     ]
   },
@@ -1309,7 +1301,7 @@ const podaciStanovi = [
     "kvadratura": 23.0,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4222.webp",
+    "slika": "slike/P1S7.webp",
     "url": "/stanovi/porta-infinitas/garsonjera/porta-1-stan-7/",
     "prostorije": {
       "Hodnik": "1,92 m²",
@@ -1317,9 +1309,7 @@ const podaciStanovi = [
       "Kupatilo": "2,85 m²"
     },
     "galerija": [
-      "slike/P1Stan7.webp",
-      "slike/P1S7.webp",
-      "slike/P1Stan7-1.webp"
+      "slike/P1S7.webp"
     ]
   },
   {
@@ -1335,7 +1325,7 @@ const podaciStanovi = [
     "kvadratura": 32.9,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4228.webp",
+    "slika": "slike/P1-Stan-8.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-1-stan-8/",
     "prostorije": {
       "Hodnik": "2,36 m²",
@@ -1361,7 +1351,7 @@ const podaciStanovi = [
     "kvadratura": 37.12,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4231.webp",
+    "slika": "slike/P1S3.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-1-stan-9/",
     "prostorije": {
       "Hodnik": "6,47 m²",
@@ -1387,7 +1377,7 @@ const podaciStanovi = [
     "kvadratura": 37.12,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4232.webp",
+    "slika": "slike/P1S3.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-1-stan-15/",
     "prostorije": {
       "Hodnik": "6,47 m²",
@@ -1413,7 +1403,7 @@ const podaciStanovi = [
     "kvadratura": 37.12,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4233.webp",
+    "slika": "slike/P1S3.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-1-stan-21/",
     "prostorije": {
       "Hodnik": "6,47 m²",
@@ -1439,7 +1429,7 @@ const podaciStanovi = [
     "kvadratura": 37.12,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4234.webp",
+    "slika": "slike/P1S3.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-1-stan-26/",
     "prostorije": {
       "Hodnik": "6,47 m²",
@@ -1465,7 +1455,7 @@ const podaciStanovi = [
     "kvadratura": 29.92,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4236.webp",
+    "slika": "slike/P1S4.webp",
     "url": "/stanovi/porta-infinitas/garsonjera/porta-1-stan-10/",
     "prostorije": {
       "DB + TRP": "23,60 m²",
@@ -1489,7 +1479,7 @@ const podaciStanovi = [
     "kvadratura": 29.92,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4237.webp",
+    "slika": "slike/P1S4.webp",
     "url": "/stanovi/porta-infinitas/garsonjera/porta-1-stan-16/",
     "prostorije": {
       "DB + TRP": "23,60 m²",
@@ -1513,7 +1503,7 @@ const podaciStanovi = [
     "kvadratura": 29.92,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4238.webp",
+    "slika": "slike/P1S4.webp",
     "url": "/stanovi/porta-infinitas/garsonjera/porta-1-stan-22/",
     "prostorije": {
       "DB + TRP": "23,60 m²",
@@ -1537,7 +1527,7 @@ const podaciStanovi = [
     "kvadratura": 29.92,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4239.webp",
+    "slika": "slike/P1S4.webp",
     "url": "/stanovi/porta-infinitas/garsonjera/porta-1-stan-27/",
     "prostorije": {
       "DB + TRP": "23,60 m²",
@@ -1561,7 +1551,7 @@ const podaciStanovi = [
     "kvadratura": 31.65,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4240.webp",
+    "slika": "slike/P1S5.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-1-stan-11/",
     "prostorije": {
       "Hodnik": "4,76 m²",
@@ -1587,7 +1577,7 @@ const podaciStanovi = [
     "kvadratura": 31.65,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4241.webp",
+    "slika": "slike/P1S5.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-1-stan-17/",
     "prostorije": {
       "Hodnik": "4,76 m²",
@@ -1613,7 +1603,7 @@ const podaciStanovi = [
     "kvadratura": 31.65,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4242.webp",
+    "slika": "slike/P1S5.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-1-stan-23/",
     "prostorije": {
       "Hodnik": "4,76 m²",
@@ -1639,7 +1629,7 @@ const podaciStanovi = [
     "kvadratura": 32.06,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4243.webp",
+    "slika": "slike/P1S6.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-1-stan-12/",
     "prostorije": {
       "Hodnik": "4,86 m²",
@@ -1665,7 +1655,7 @@ const podaciStanovi = [
     "kvadratura": 32.06,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4244.webp",
+    "slika": "slike/P1S6.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-1-stan-18/",
     "prostorije": {
       "Hodnik": "4,86 m²",
@@ -1691,7 +1681,7 @@ const podaciStanovi = [
     "kvadratura": 32.9,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4245.webp",
+    "slika": "slike/P1-Stan-8.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-1-stan-14/",
     "prostorije": {
       "Hodnik": "2,36 m²",
@@ -1717,7 +1707,7 @@ const podaciStanovi = [
     "kvadratura": 32.9,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4246.webp",
+    "slika": "slike/P1-Stan-8.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-1-stan-20/",
     "prostorije": {
       "Hodnik": "2,36 m²",
@@ -1743,7 +1733,7 @@ const podaciStanovi = [
     "kvadratura": 37.98,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4247.webp",
+    "slika": "slike/P1-Stan-13.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-1-stan-13/",
     "prostorije": {
       "Hodnik": "3,55 m²",
@@ -1769,7 +1759,7 @@ const podaciStanovi = [
     "kvadratura": 37.98,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4251.webp",
+    "slika": "slike/P1-Stan-13.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-1-stan-19/",
     "prostorije": {
       "Hodnik": "3,55 m²",
@@ -1795,7 +1785,7 @@ const podaciStanovi = [
     "kvadratura": 33.93,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4252.webp",
+    "slika": "slike/P1-Stan-24.webp",
     "url": "/stanovi/porta-infinitas/jednosoban/porta-1-stan-24/",
     "prostorije": {
       "DB + TRP": "17,12 m²",
@@ -1820,7 +1810,7 @@ const podaciStanovi = [
     "kvadratura": 67.31,
     "sobe": 3,
     "kupatila": 1,
-    "slika": "slike/stan_4255.webp",
+    "slika": "slike/P1-Stan-25.webp",
     "url": "/stanovi/porta-infinitas/dvoiposoban/porta-1-stan-25/",
     "prostorije": {
       "Hodnik": "5,42 m²",
@@ -1848,7 +1838,7 @@ const podaciStanovi = [
     "kvadratura": 37.12,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4258.webp",
+    "slika": "slike/P2-Stan-3.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-2-stan-05/",
     "prostorije": {
       "Hodnik": "6,47 m²",
@@ -1858,7 +1848,7 @@ const podaciStanovi = [
       "Terasa": "3,61 m²"
     },
     "galerija": [
-      "slike/P2Stan5.webp"
+      "slike/P2-Stan-3.webp"
     ]
   },
   {
@@ -1874,7 +1864,7 @@ const podaciStanovi = [
     "kvadratura": 37.12,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4262.webp",
+    "slika": "slike/P2-Stan-3.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-2-stan-11/",
     "prostorije": {
       "Hodnik": "6,47 m²",
@@ -1900,7 +1890,7 @@ const podaciStanovi = [
     "kvadratura": 37.12,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4263.webp",
+    "slika": "slike/P2-Stan-3.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-2-stan-17/",
     "prostorije": {
       "Hodnik": "6,47 m²",
@@ -1950,7 +1940,7 @@ const podaciStanovi = [
     "kvadratura": 29.92,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4265.webp",
+    "slika": "slike/stan_4264.webp",
     "url": "/stanovi/porta-infinitas/garsonjera/porta-2-stan-12/",
     "prostorije": {
       "DB + TRP": "23,60 m²",
@@ -1958,7 +1948,7 @@ const podaciStanovi = [
       "Terasa": "3,18 m²"
     },
     "galerija": [
-      "slike/stan_4265.webp"
+      "slike/stan_4264.webp"
     ]
   },
   {
@@ -1974,7 +1964,7 @@ const podaciStanovi = [
     "kvadratura": 29.92,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4266.webp",
+    "slika": "slike/stan_4264.webp",
     "url": "/stanovi/porta-infinitas/garsonjera/porta-2-stan-18/",
     "prostorije": {
       "DB + TRP": "23,60 m²",
@@ -1982,7 +1972,7 @@ const podaciStanovi = [
       "Terasa": "3,18 m²"
     },
     "galerija": [
-      "slike/stan_4266.webp"
+      "slike/stan_4264.webp"
     ]
   },
   {
@@ -2024,7 +2014,7 @@ const podaciStanovi = [
     "kvadratura": 31.65,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4268.webp",
+    "slika": "slike/stan_4267.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-2-stan-07/",
     "prostorije": {
       "Hodnik": "4,76 m²",
@@ -2034,7 +2024,7 @@ const podaciStanovi = [
       "Terasa": "3,26 m²"
     },
     "galerija": [
-      "slike/stan_4268.webp"
+      "slike/stan_4267.webp"
     ]
   },
   {
@@ -2050,7 +2040,7 @@ const podaciStanovi = [
     "kvadratura": 31.65,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4269.webp",
+    "slika": "slike/stan_4267.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-2-stan-13/",
     "prostorije": {
       "Hodnik": "4,76 m²",
@@ -2060,7 +2050,7 @@ const podaciStanovi = [
       "Terasa": "3,26 m²"
     },
     "galerija": [
-      "slike/stan_4269.webp"
+      "slike/stan_4267.webp"
     ]
   },
   {
@@ -2076,7 +2066,7 @@ const podaciStanovi = [
     "kvadratura": 31.65,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4270.webp",
+    "slika": "slike/stan_4267.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-2-stan-19/",
     "prostorije": {
       "Hodnik": "4,76 m²",
@@ -2086,7 +2076,7 @@ const podaciStanovi = [
       "Terasa": "3,26 m²"
     },
     "galerija": [
-      "slike/stan_4270.webp"
+      "slike/stan_4267.webp"
     ]
   },
   {
@@ -2128,7 +2118,7 @@ const podaciStanovi = [
     "kvadratura": 32.06,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4272.webp",
+    "slika": "slike/stan_4271.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-2-stan-08/",
     "prostorije": {
       "Hodnik": "4,86 m²",
@@ -2138,7 +2128,7 @@ const podaciStanovi = [
       "Terasa": "3,26 m²"
     },
     "galerija": [
-      "slike/stan_4272.webp"
+      "slike/stan_4271.webp"
     ]
   },
   {
@@ -2154,7 +2144,7 @@ const podaciStanovi = [
     "kvadratura": 32.06,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4273.webp",
+    "slika": "slike/stan_4271.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-2-stan-14/",
     "prostorije": {
       "Hodnik": "4,86 m²",
@@ -2164,7 +2154,7 @@ const podaciStanovi = [
       "Terasa": "3,26 m²"
     },
     "galerija": [
-      "slike/stan_4273.webp"
+      "slike/stan_4271.webp"
     ]
   },
   {
@@ -2206,7 +2196,7 @@ const podaciStanovi = [
     "kvadratura": 32.9,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4275.webp",
+    "slika": "slike/stan_4274.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-2-stan-10/",
     "prostorije": {
       "Hodnik": "2,36 m²",
@@ -2216,7 +2206,7 @@ const podaciStanovi = [
       "Terasa": "3,61 m²"
     },
     "galerija": [
-      "slike/stan_4275.webp"
+      "slike/stan_4274.webp"
     ]
   },
   {
@@ -2232,7 +2222,7 @@ const podaciStanovi = [
     "kvadratura": 32.9,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4276.webp",
+    "slika": "slike/stan_4274.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-2-stan-16/",
     "prostorije": {
       "Hodnik": "2,36 m²",
@@ -2242,7 +2232,7 @@ const podaciStanovi = [
       "Terasa": "3,61 m²"
     },
     "galerija": [
-      "slike/stan_4276.webp"
+      "slike/stan_4274.webp"
     ]
   },
   {
@@ -2283,7 +2273,7 @@ const podaciStanovi = [
     "kvadratura": 38.22,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4281.webp",
+    "slika": "slike/P2-Stan-3-1.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-2-stan-03/",
     "prostorije": {
       "Hodnik": "3,55 m²",
@@ -2309,7 +2299,7 @@ const podaciStanovi = [
     "kvadratura": 38.22,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4283.webp",
+    "slika": "slike/P2-Stan-3-1.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-2-stan-09/",
     "prostorije": {
       "Hodnik": "3,55 m²",
@@ -2335,7 +2325,7 @@ const podaciStanovi = [
     "kvadratura": 38.22,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4284.webp",
+    "slika": "slike/P2-Stan-3-1.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-2-stan-15/",
     "prostorije": {
       "Hodnik": "3,55 m²",
@@ -2361,7 +2351,7 @@ const podaciStanovi = [
     "kvadratura": 74.77,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4285.webp",
+    "slika": "slike/P2-Stan-21.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-2-stan-21/",
     "prostorije": {
       "Hodnik": "3,87 m²",
@@ -2387,7 +2377,7 @@ const podaciStanovi = [
     "kvadratura": 76.25,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4287.webp",
+    "slika": "slike/P2-Stan-22.webp",
     "url": "/stanovi/porta-infinitas/dvosoban/porta-2-stan-22/",
     "prostorije": {
       "Hodnik": "4,86 m²",
@@ -2414,7 +2404,7 @@ const podaciStanovi = [
     "kvadratura": 37.12,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4289.webp",
+    "slika": "slike/P3-Stan-5.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-3-stan-05/",
     "prostorije": {
       "Hodnik": "6,47 m²",
@@ -2440,7 +2430,7 @@ const podaciStanovi = [
     "kvadratura": 37.12,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4292.webp",
+    "slika": "slike/P3-Stan-5.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-3-stan-11/",
     "prostorije": {
       "Hodnik": "6,47 m²",
@@ -2466,7 +2456,7 @@ const podaciStanovi = [
     "kvadratura": 37.12,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4294.webp",
+    "slika": "slike/P3-Stan-5.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-3-stan-17/",
     "prostorije": {
       "Hodnik": "6,47 m²",
@@ -2492,7 +2482,7 @@ const podaciStanovi = [
     "kvadratura": 37.12,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4296.webp",
+    "slika": "slike/P3-Stan-5.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-3-stan-22/",
     "prostorije": {
       "Hodnik": "6,47 m²",
@@ -2542,7 +2532,7 @@ const podaciStanovi = [
     "kvadratura": 29.92,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4299.webp",
+    "slika": "slike/stan_4298.webp",
     "url": "/stanovi/porta-infinitas/garsonjera/porta-3-stan-12/",
     "prostorije": {
       "DB + TRP": "23,60 m²",
@@ -2550,7 +2540,7 @@ const podaciStanovi = [
       "Terasa": "3,18 m²"
     },
     "galerija": [
-      "slike/stan_4299.webp"
+      "slike/stan_4298.webp"
     ]
   },
   {
@@ -2566,7 +2556,7 @@ const podaciStanovi = [
     "kvadratura": 29.92,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4301.webp",
+    "slika": "slike/stan_4298.webp",
     "url": "/stanovi/porta-infinitas/garsonjera/porta-3-stan-18/",
     "prostorije": {
       "DB + TRP": "23,60 m²",
@@ -2574,7 +2564,7 @@ const podaciStanovi = [
       "Terasa": "3,18 m²"
     },
     "galerija": [
-      "slike/stan_4301.webp"
+      "slike/stan_4298.webp"
     ]
   },
   {
@@ -2590,7 +2580,7 @@ const podaciStanovi = [
     "kvadratura": 29.92,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4302.webp",
+    "slika": "slike/stan_4298.webp",
     "url": "/stanovi/porta-infinitas/garsonjera/porta-3-stan-23/",
     "prostorije": {
       "DB + TRP": "23,60 m²",
@@ -2598,7 +2588,7 @@ const podaciStanovi = [
       "Terasa": "3,18 m²"
     },
     "galerija": [
-      "slike/stan_4302.webp"
+      "slike/stan_4298.webp"
     ]
   },
   {
@@ -2640,7 +2630,7 @@ const podaciStanovi = [
     "kvadratura": 31.65,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4304.webp",
+    "slika": "slike/stan_4303.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-3-stan-07/",
     "prostorije": {
       "Hodnik": "4,76 m²",
@@ -2650,7 +2640,7 @@ const podaciStanovi = [
       "Terasa": "3,26 m²"
     },
     "galerija": [
-      "slike/stan_4304.webp"
+      "slike/stan_4303.webp"
     ]
   },
   {
@@ -2666,7 +2656,7 @@ const podaciStanovi = [
     "kvadratura": 31.65,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4305.webp",
+    "slika": "slike/stan_4303.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-3-stan-13/",
     "prostorije": {
       "Hodnik": "4,76 m²",
@@ -2676,7 +2666,7 @@ const podaciStanovi = [
       "Terasa": "3,26 m²"
     },
     "galerija": [
-      "slike/stan_4305.webp"
+      "slike/stan_4303.webp"
     ]
   },
   {
@@ -2692,7 +2682,7 @@ const podaciStanovi = [
     "kvadratura": 31.65,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4306.webp",
+    "slika": "slike/stan_4303.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-3-stan-19/",
     "prostorije": {
       "Hodnik": "4,76 m²",
@@ -2702,7 +2692,7 @@ const podaciStanovi = [
       "Terasa": "3,26 m²"
     },
     "galerija": [
-      "slike/stan_4306.webp"
+      "slike/stan_4303.webp"
     ]
   },
   {
@@ -2744,7 +2734,7 @@ const podaciStanovi = [
     "kvadratura": 32.06,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4308.webp",
+    "slika": "slike/stan_4307.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-3-stan-08/",
     "prostorije": {
       "Hodnik": "4,86 m²",
@@ -2754,7 +2744,7 @@ const podaciStanovi = [
       "Terasa": "3,26 m²"
     },
     "galerija": [
-      "slike/stan_4308.webp"
+      "slike/stan_4307.webp"
     ]
   },
   {
@@ -2770,7 +2760,7 @@ const podaciStanovi = [
     "kvadratura": 32.06,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4309.webp",
+    "slika": "slike/stan_4307.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-3-stan-14/",
     "prostorije": {
       "Hodnik": "4,86 m²",
@@ -2780,7 +2770,7 @@ const podaciStanovi = [
       "Terasa": "3,26 m²"
     },
     "galerija": [
-      "slike/stan_4309.webp"
+      "slike/stan_4307.webp"
     ]
   },
   {
@@ -2846,7 +2836,7 @@ const podaciStanovi = [
     "kvadratura": 32.9,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4312.webp",
+    "slika": "slike/stan_4311.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-3-stan-10/",
     "prostorije": {
       "Hodnik": "2,36 m²",
@@ -2856,7 +2846,7 @@ const podaciStanovi = [
       "Terasa": "3,61 m²"
     },
     "galerija": [
-      "slike/stan_4312.webp"
+      "slike/stan_4311.webp"
     ]
   },
   {
@@ -2872,7 +2862,7 @@ const podaciStanovi = [
     "kvadratura": 32.9,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4313.webp",
+    "slika": "slike/stan_4311.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-3-stan-16/",
     "prostorije": {
       "Hodnik": "2,36 m²",
@@ -2882,7 +2872,7 @@ const podaciStanovi = [
       "Terasa": "3,61 m²"
     },
     "galerija": [
-      "slike/stan_4313.webp"
+      "slike/stan_4311.webp"
     ]
   },
   {
@@ -2977,7 +2967,7 @@ const podaciStanovi = [
     "kvadratura": 37.98,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4317.webp",
+    "slika": "slike/stan_4316.webp",
     "url": "/stanovi/porta-infinitas/jednoiposoban/porta-3-stan-15/",
     "prostorije": {
       "Hodnik": "3,55 m²",
@@ -2987,7 +2977,7 @@ const podaciStanovi = [
       "Terasa": "3,92 m²"
     },
     "galerija": [
-      "slike/stan_4317.webp"
+      "slike/stan_4316.webp"
     ]
   },
   {

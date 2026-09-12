@@ -38,7 +38,7 @@ const podaciStanovi = [
     "kvadratura": 30.36,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_3972.webp",
+    "slika": "slike/Stan-4-bjekat-1.webp",
     "url": "/stanovi/jezero/jednosoban/jezero-4/",
     "prostorije": {
       "Hodnik": "4,61 m²",
@@ -47,11 +47,8 @@ const podaciStanovi = [
       "Kupatilo": "2,84 m²"
     },
     "galerija": [
-      "slike/1_4.webp",
-      "slike/Stan-broj-4-suteren-naslovna.webp",
-      "slike/Jezero-I-stan-4.webp",
       "slike/Stan-4-bjekat-1.webp",
-      "slike/Stan-broj-4-suteren-naslovna-1.webp"
+      "slike/1_4.webp"
     ]
   },
   {
@@ -67,7 +64,7 @@ const podaciStanovi = [
     "kvadratura": 38.44,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_3989.webp",
+    "slika": "slike/Stan-broj-1.webp",
     "url": "/stanovi/jezero/dvosoban/jezero-1/",
     "prostorije": {
       "Hodnik": "3,20 m²",
@@ -77,11 +74,8 @@ const podaciStanovi = [
       "Kupatilo": "3,53 m²"
     },
     "galerija": [
-      "slike/Stan-broj-1-suteren.webp",
-      "slike/Jezero-I-stan-1.webp",
       "slike/Stan-broj-1.webp",
-      "slike/Stan-broj-1-suteren-naslovna.webp",
-      "slike/Stan-broj-1-suteren-manja.webp"
+      "slike/1_1.webp"
     ]
   },
   {
@@ -97,7 +91,7 @@ const podaciStanovi = [
     "kvadratura": 37.23,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_3991.webp",
+    "slika": "slike/Stan-broj-3.webp",
     "url": "/stanovi/jezero/jednosoban/jezero-2/",
     "prostorije": {
       "Hodnik": "2,83 m²",
@@ -107,12 +101,8 @@ const podaciStanovi = [
       "Kupatilo": "3,26 m²"
     },
     "galerija": [
-      "slike/Stan-broj-3-suteren-naslovna-1-2.webp",
       "slike/Stan-broj-3.webp",
-      "slike/Stan-broj-3-suteren-naslovna-1-1.webp",
-      "slike/Stan-broj-3-suteren-naslovna-1.webp",
-      "slike/Stan-3-bjekat-1.webp",
-      "slike/Jezero-I-stan-3.webp"
+      "slike/1_3.webp"
     ]
   },
   {
@@ -128,7 +118,7 @@ const podaciStanovi = [
     "kvadratura": 33.92,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_3996.webp",
+    "slika": "slike/Stan-broj-2.webp",
     "url": "/stanovi/jezero/jednosoban/jezero-i-2/",
     "prostorije": {
       "Hodnik": "4,77 m²",
@@ -137,12 +127,7 @@ const podaciStanovi = [
       "Kupatilo": "3,06 m²"
     },
     "galerija": [
-      "slike/Stan-broj-2-suteren-naslovna-2.webp",
-      "slike/Stan-broj-2-suteren-naslovna-1.webp",
-      "slike/Jezero-I-stan-2.webp",
-      "slike/Stan-2-bjekat-1.webp",
-      "slike/Stan-broj-2-suteren-naslovna-3.webp",
-      "slike/Stan-broj-2-suteren-naslovna.webp",
+      "slike/Stan-broj-2.webp",
       "slike/1_2.webp"
     ]
   },
@@ -159,7 +144,7 @@ const podaciStanovi = [
     "kvadratura": 33.78,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_3998.webp",
+    "slika": "slike/P5_I11_II17-Objekat-1.webp",
     "url": "/stanovi/jezero/jednosoban/jezero-i-5/",
     "prostorije": {
       "Hodnik": "4,77 m²",
@@ -169,7 +154,8 @@ const podaciStanovi = [
       "Terasa": "3,78 m²"
     },
     "galerija": [
-      "slike/P5_I11_II17-Objekat-1.webp"
+      "slike/P5_I11_II17-Objekat-1.webp",
+      "slike/1_51117.webp"
     ]
   },
   {
@@ -185,7 +171,7 @@ const podaciStanovi = [
     "kvadratura": 33.78,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4001.webp",
+    "slika": "slike/P5_I11_II17-Objekat-1.webp",
     "url": "/stanovi/jezero/jednosoban/jezero-i-17/",
     "prostorije": {
       "Hodnik": "4,77 m²",
@@ -195,8 +181,8 @@ const podaciStanovi = [
       "Terasa": "3,78 m²"
     },
     "galerija": [
-      "slike/Jezero-I-stan-51117.webp",
-      "slike/stan_4001.webp"
+      "slike/P5_I11_II17-Objekat-1.webp",
+      "slike/1_51117.webp"
     ]
   },
   {
@@ -212,7 +198,7 @@ const podaciStanovi = [
     "kvadratura": 24.85,
     "sobe": 0,
     "kupatila": 1,
-    "slika": "slike/stan_4002.webp",
+    "slika": "slike/P6_I12_II18-Objekat-1.webp",
     "url": "/stanovi/jezero/garsonjera/jezero-i-6/",
     "prostorije": {
       "Hodnik": "1,8 m²",
@@ -221,7 +207,8 @@ const podaciStanovi = [
       "Terasa": "3,13 m²"
     },
     "galerija": [
-      "slike/P6_I12_II18-Objekat-1.webp"
+      "slike/P6_I12_II18-Objekat-1.webp",
+      "slike/1_61218.webp"
     ]
   },
   {
@@ -237,7 +224,7 @@ const podaciStanovi = [
     "kvadratura": 24.85,
     "sobe": 0,
     "kupatila": 1,
-    "slika": "slike/stan_4004.webp",
+    "slika": "slike/P6_I12_II18-Objekat-1.webp",
     "url": "/stanovi/jezero/garsonjera/jezero-i-12/",
     "prostorije": {
       "Hodnik": "1,8 m²",
@@ -246,7 +233,8 @@ const podaciStanovi = [
       "Terasa": "3,13 m²"
     },
     "galerija": [
-      "slike/stan_4002.webp"
+      "slike/P6_I12_II18-Objekat-1.webp",
+      "slike/1_61218.webp"
     ]
   },
   {
@@ -262,7 +250,7 @@ const podaciStanovi = [
     "kvadratura": 24.85,
     "sobe": 0,
     "kupatila": 1,
-    "slika": "slike/stan_4005.webp",
+    "slika": "slike/P6_I12_II18-Objekat-1.webp",
     "url": "/stanovi/jezero/garsonjera/jezero-i-18/",
     "prostorije": {
       "Hodnik": "1,8 m²",
@@ -271,7 +259,8 @@ const podaciStanovi = [
       "Terasa": "3,13 m²"
     },
     "galerija": [
-      "slike/stan_4002.webp"
+      "slike/P6_I12_II18-Objekat-1.webp",
+      "slike/1_61218.webp"
     ]
   },
   {
@@ -287,7 +276,7 @@ const podaciStanovi = [
     "kvadratura": 24.85,
     "sobe": 0,
     "kupatila": 1,
-    "slika": "slike/stan_4006.webp",
+    "slika": "slike/P7_I13_II19-Objekat-1.webp",
     "url": "/stanovi/jezero/garsonjera/jezero-i-7/",
     "prostorije": {
       "Hodnik": "1,8 m²",
@@ -296,7 +285,8 @@ const podaciStanovi = [
       "Terasa": "3,13 m²"
     },
     "galerija": [
-      "slike/P7_I13_II19-Objekat-1.webp"
+      "slike/P7_I13_II19-Objekat-1.webp",
+      "slike/1_71319.webp"
     ]
   },
   {
@@ -312,7 +302,7 @@ const podaciStanovi = [
     "kvadratura": 24.85,
     "sobe": 0,
     "kupatila": 1,
-    "slika": "slike/stan_4008.webp",
+    "slika": "slike/P7_I13_II19-Objekat-1.webp",
     "url": "/stanovi/jezero/garsonjera/jezero-i-13/",
     "prostorije": {
       "Hodnik": "1,8 m²",
@@ -321,7 +311,8 @@ const podaciStanovi = [
       "Terasa": "3,13 m²"
     },
     "galerija": [
-      "slike/stan_4002.webp"
+      "slike/P7_I13_II19-Objekat-1.webp",
+      "slike/1_71319.webp"
     ]
   },
   {
@@ -337,7 +328,7 @@ const podaciStanovi = [
     "kvadratura": 24.85,
     "sobe": 0,
     "kupatila": 1,
-    "slika": "slike/stan_4009.webp",
+    "slika": "slike/P7_I13_II19-Objekat-1.webp",
     "url": "/stanovi/jezero/garsonjera/jezero-i-19/",
     "prostorije": {
       "Hodnik": "1,8 m²",
@@ -346,7 +337,8 @@ const podaciStanovi = [
       "Terasa": "3,13 m²"
     },
     "galerija": [
-      "slike/stan_4002.webp"
+      "slike/P7_I13_II19-Objekat-1.webp",
+      "slike/1_71319.webp"
     ]
   },
   {
@@ -362,7 +354,7 @@ const podaciStanovi = [
     "kvadratura": 37.08,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4010.webp",
+    "slika": "slike/P8_I14_II20-Objekat-1-NASLOVNA.webp",
     "url": "/stanovi/jezero/jednosoban/jezero-i-8/",
     "prostorije": {
       "Hodnik": "2,83 m²",
@@ -374,7 +366,7 @@ const podaciStanovi = [
     },
     "galerija": [
       "slike/P8_I14_II20-Objekat-1-NASLOVNA.webp",
-      "slike/P8_I14_II20-Objekat-1-NASLOVNA.webp"
+      "slike/1_81420.webp"
     ]
   },
   {
@@ -390,7 +382,7 @@ const podaciStanovi = [
     "kvadratura": 40.96,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4021.webp",
+    "slika": "slike/P10_I16_II22-Objekat-1-NASLOVNA.webp",
     "url": "/stanovi/jezero/dvosoban/jezero-i-10/",
     "prostorije": {
       "Hodnik": "4,44 m²",
@@ -402,7 +394,7 @@ const podaciStanovi = [
     },
     "galerija": [
       "slike/P10_I16_II22-Objekat-1-NASLOVNA.webp",
-      "slike/P10_I16_II22-Objekat-1-NASLOVNA.webp"
+      "slike/1_101622.webp"
     ]
   },
   {
@@ -418,7 +410,7 @@ const podaciStanovi = [
     "kvadratura": 26.07,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4025.webp",
+    "slika": "slike/PS23-Objekat-1.webp",
     "url": "/stanovi/jezero/jednosoban/jezero-i-23/",
     "prostorije": {
       "Hodnik": "1,36 m²",
@@ -428,7 +420,7 @@ const podaciStanovi = [
     },
     "galerija": [
       "slike/PS23-Objekat-1.webp",
-      "slike/PS23-Objekat-1-NASLOVNA.webp"
+      "slike/1_23.webp"
     ]
   },
   {
@@ -444,7 +436,7 @@ const podaciStanovi = [
     "kvadratura": 19.77,
     "sobe": 0,
     "kupatila": 1,
-    "slika": "slike/stan_4027.webp",
+    "slika": "slike/PS24-Objekat-1.webp",
     "url": "/stanovi/jezero/garsonjera/jezero-i-24/",
     "prostorije": {
       "Hodnik": "1,80 m²",
@@ -453,7 +445,7 @@ const podaciStanovi = [
     },
     "galerija": [
       "slike/PS24-Objekat-1.webp",
-      "slike/PS-24-i-25-Objekat-1-NASLOVNA.webp"
+      "slike/1_24.webp"
     ]
   },
   {
@@ -469,7 +461,7 @@ const podaciStanovi = [
     "kvadratura": 19.77,
     "sobe": 0,
     "kupatila": 1,
-    "slika": "slike/stan_4029.webp",
+    "slika": "slike/PS25-Objekat-1.webp",
     "url": "/stanovi/jezero/garsonjera/jezero-i-25/",
     "prostorije": {
       "Hodnik": "1,80 m²",
@@ -477,7 +469,8 @@ const podaciStanovi = [
       "Kupatilo": "3,20 m²"
     },
     "galerija": [
-      "slike/PS-24-i-25-Objekat-1-NASLOVNA-1.webp"
+      "slike/PS25-Objekat-1.webp",
+      "slike/1_25.webp"
     ]
   },
   {
@@ -493,7 +486,7 @@ const podaciStanovi = [
     "kvadratura": 20.22,
     "sobe": 0,
     "kupatila": 1,
-    "slika": "slike/stan_4032.webp",
+    "slika": "slike/PS26-Objekat-1.webp",
     "url": "/stanovi/jezero/garsonjera/jezero-i-26/",
     "prostorije": {
       "Hodnik": "1,52 m²",
@@ -502,7 +495,8 @@ const podaciStanovi = [
       "Kupatilo": "3,26 m²"
     },
     "galerija": [
-      "slike/PS26-Objekat-1.webp"
+      "slike/PS26-Objekat-1.webp",
+      "slike/1_26.webp"
     ]
   },
   {
@@ -518,7 +512,7 @@ const podaciStanovi = [
     "kvadratura": 37.35,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4034.webp",
+    "slika": "slike/PS27-Objekat-1.webp",
     "url": "/stanovi/jezero/dvosoban/jezero-i-27/",
     "prostorije": {
       "Hodnik": "1,77 m²",
@@ -528,7 +522,8 @@ const podaciStanovi = [
       "Kupatilo": "3,27 m²"
     },
     "galerija": [
-      "slike/PS27-Objekat-1.webp"
+      "slike/PS27-Objekat-1.webp",
+      "slike/1_27.webp"
     ]
   },
   {
@@ -544,7 +539,7 @@ const podaciStanovi = [
     "kvadratura": 31.85,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4036.webp",
+    "slika": "slike/PS28-Objekat-1.webp",
     "url": "/stanovi/jezero/dvosoban/jezero-i-28/",
     "prostorije": {
       "Hodnik": "1,34 m²",
@@ -554,7 +549,8 @@ const podaciStanovi = [
       "Kupatilo": "3,06 m²"
     },
     "galerija": [
-      "slike/PS28-Objekat-1.webp"
+      "slike/PS28-Objekat-1.webp",
+      "slike/1_28.webp"
     ]
   },
   {
@@ -570,7 +566,7 @@ const podaciStanovi = [
     "kvadratura": 25.77,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4040.webp",
+    "slika": "slike/PS-23.webp",
     "url": "/stanovi/jezero/jednosoban/jezero-ii-23/",
     "prostorije": {
       "Hodnik": "4,77 m²",
@@ -595,7 +591,7 @@ const podaciStanovi = [
     "kvadratura": 20.22,
     "sobe": 0,
     "kupatila": 1,
-    "slika": "slike/stan_4054.webp",
+    "slika": "slike/PS-26.webp",
     "url": "/stanovi/jezero/garsonjera/jezero-ii-26/",
     "prostorije": {
       "Hodnik": "1,22 m²",
@@ -619,7 +615,7 @@ const podaciStanovi = [
     "kvadratura": 37.35,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4055.webp",
+    "slika": "slike/PS-27.webp",
     "url": "/stanovi/jezero/dvosoban/jezero-ii-27/",
     "prostorije": {
       "Hodnik": "1,66 m²",
@@ -645,7 +641,7 @@ const podaciStanovi = [
     "kvadratura": 25.83,
     "sobe": 0,
     "kupatila": 1,
-    "slika": "slike/stan_4056.webp",
+    "slika": "slike/PS-28.webp",
     "url": "/stanovi/jezero/garsonjera/jezero-ii-28/",
     "prostorije": {
       "Hodnik": "1,34 m²",
@@ -669,7 +665,7 @@ const podaciStanovi = [
     "kvadratura": 19.77,
     "sobe": 0,
     "kupatila": 1,
-    "slika": "slike/stan_4058.webp",
+    "slika": "slike/PS-25.webp",
     "url": "/stanovi/jezero/garsonjera/jezero-ii-25/",
     "prostorije": {
       "Hodnik": "1,80 m²",
@@ -677,9 +673,7 @@ const podaciStanovi = [
       "Kupatilo": "3,20 m²"
     },
     "galerija": [
-      "slike/PS-25.webp",
-      "slike/1_25-1.webp",
-      "slike/PS-24-i-25-Objekat-1-NASLOVNA-2.webp"
+      "slike/PS-25.webp"
     ]
   },
   {
@@ -695,7 +689,7 @@ const podaciStanovi = [
     "kvadratura": 33.92,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4063.webp",
+    "slika": "slike/Stan-broj-1-suteren-naslovna-3.webp",
     "url": "/stanovi/jezero/jednosoban/jezero-ii-1/",
     "prostorije": {
       "Hodnik": "4,77 m²",
@@ -704,9 +698,7 @@ const podaciStanovi = [
       "Kupatilo": "3,06 m²"
     },
     "galerija": [
-      "slike/Stan-broj-1-suteren-naslovna-3.webp",
-      "slike/Suteren-Stan-broj-1.webp",
-      "slike/1_1.webp"
+      "slike/Stan-broj-1-suteren-naslovna-3.webp"
     ]
   },
   {
@@ -722,7 +714,7 @@ const podaciStanovi = [
     "kvadratura": 24.68,
     "sobe": 0,
     "kupatila": 1,
-    "slika": "slike/stan_4065.webp",
+    "slika": "slike/Stan-2-Objekat-2.webp",
     "url": "/stanovi/jezero/garsonjera/jezero-ii-2/",
     "prostorije": {
       "Hodnik": "1,80 m²",
@@ -730,7 +722,7 @@ const podaciStanovi = [
       "Kupatilo": "3,20 m²"
     },
     "galerija": [
-      "slike/Suteren-Stan-broj-2.webp"
+      "slike/Stan-2-Objekat-2.webp"
     ]
   },
   {
@@ -746,7 +738,7 @@ const podaciStanovi = [
     "kvadratura": 24.68,
     "sobe": 0,
     "kupatila": 1,
-    "slika": "slike/stan_4067.webp",
+    "slika": "slike/Stan-3-Objekat-2.webp",
     "url": "/stanovi/jezero/garsonjera/jezero-ii-3/",
     "prostorije": {
       "Hodnik": "1,80 m²",
@@ -754,7 +746,7 @@ const podaciStanovi = [
       "Kupatilo": "3,20 m²"
     },
     "galerija": [
-      "slike/Suteren-Stan-broj-3.webp"
+      "slike/Stan-3-Objekat-2.webp"
     ]
   },
   {
@@ -770,7 +762,7 @@ const podaciStanovi = [
     "kvadratura": 37.24,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4069.webp",
+    "slika": "slike/Stan-broj-4-suteren-naslovna-1.webp",
     "url": "/stanovi/jezero/jednosoban/jezero-ii-4/",
     "prostorije": {
       "Hodnik": "2,83 m²",
@@ -780,8 +772,6 @@ const podaciStanovi = [
       "Kupatilo": "3,26 m²"
     },
     "galerija": [
-      "slike/Stan-broj-4-suteren-naslovna-1-1.webp",
-      "slike/Suteren-Stan-broj-4.webp",
       "slike/Stan-broj-4-suteren-naslovna-1.webp"
     ]
   },
@@ -798,7 +788,7 @@ const podaciStanovi = [
     "kvadratura": 37.68,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4071.webp",
+    "slika": "slike/Prizemlje-Stan-broj-5.webp",
     "url": "/stanovi/jezero/dvosoban/jezero-ii-5/",
     "prostorije": {
       "Hodnik": "3,09 m²",
@@ -824,7 +814,7 @@ const podaciStanovi = [
     "kvadratura": 33.78,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4073.webp",
+    "slika": "slike/Stan-broj-6-11-i-17-naslovna.webp",
     "url": "/stanovi/jezero/jednosoban/jezero-ii-6/",
     "prostorije": {
       "Hodnik": "4,77 m²",
@@ -834,7 +824,6 @@ const podaciStanovi = [
       "Terasa": "3,78 m²"
     },
     "galerija": [
-      "slike/Prizemlje-Stan-broj-6.webp",
       "slike/Stan-broj-6-11-i-17-naslovna.webp"
     ]
   },
@@ -851,7 +840,7 @@ const podaciStanovi = [
     "kvadratura": 24.86,
     "sobe": 0,
     "kupatila": 1,
-    "slika": "slike/stan_4075.webp",
+    "slika": "slike/Stan-broj-7-i-8-i-12-i-13-i-18-i-19-naslovna.webp",
     "url": "/stanovi/jezero/garsonjera/jezero-ii-7/",
     "prostorije": {
       "Hodnik": "1,80 m²",
@@ -860,7 +849,6 @@ const podaciStanovi = [
       "Terasa": "3,14 m²"
     },
     "galerija": [
-      "slike/Prizemlje-Stan-broj-7.webp",
       "slike/Stan-broj-7-i-8-i-12-i-13-i-18-i-19-naslovna.webp"
     ]
   },
@@ -877,7 +865,7 @@ const podaciStanovi = [
     "kvadratura": 24.86,
     "sobe": 0,
     "kupatila": 1,
-    "slika": "slike/stan_4077.webp",
+    "slika": "slike/Stan-broj-7-i-8-i-12-i-13-i-18-i-19-naslovna.webp",
     "url": "/stanovi/jezero/garsonjera/jezero-ii-8/",
     "prostorije": {
       "Hodnik": "1,80 m²",
@@ -886,8 +874,7 @@ const podaciStanovi = [
       "Terasa": "3,14 m²"
     },
     "galerija": [
-      "slike/Stan-broj-7-i-8-i-12-i-13-i-18-i-19-naslovna-1.webp",
-      "slike/Prizemlje-Stan-broj-8.webp"
+      "slike/Stan-broj-7-i-8-i-12-i-13-i-18-i-19-naslovna.webp"
     ]
   },
   {
@@ -903,7 +890,7 @@ const podaciStanovi = [
     "kvadratura": 37.27,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4079.webp",
+    "slika": "slike/P9_I14_II20-Objekat-2-NASLOVNA.webp",
     "url": "/stanovi/jezero/jednosoban/jezero-ii-9/",
     "prostorije": {
       "Hodnik": "2,83 m²",
@@ -914,8 +901,7 @@ const podaciStanovi = [
       "Terasa": "3,93 m²"
     },
     "galerija": [
-      "slike/Prizemlje-Stan-broj-9.webp",
-      "slike/P9_I14_II20-Objekat-2-NASLOVNA-1.webp"
+      "slike/P9_I14_II20-Objekat-2-NASLOVNA.webp"
     ]
   },
   {
@@ -931,7 +917,7 @@ const podaciStanovi = [
     "kvadratura": 30.34,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4081.webp",
+    "slika": "slike/Prizemlje-Stan-broj-10.webp",
     "url": "/stanovi/jezero/jednosoban/jezero-ii-10/",
     "prostorije": {
       "Hodnik": "1,71 m²",
@@ -956,7 +942,7 @@ const podaciStanovi = [
     "kvadratura": 33.78,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4083.webp",
+    "slika": "slike/Stan-broj-6-11-i-17-naslovna.webp",
     "url": "/stanovi/jezero/jednosoban/jezero-ii-11/",
     "prostorije": {
       "Hodnik": "4,77 m²",
@@ -966,7 +952,6 @@ const podaciStanovi = [
       "Terasa": "3,78 m²"
     },
     "galerija": [
-      "slike/I-sprat-11-II-sprat-17.webp",
       "slike/Stan-broj-6-11-i-17-naslovna.webp"
     ]
   },
@@ -983,7 +968,7 @@ const podaciStanovi = [
     "kvadratura": 33.78,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4085.webp",
+    "slika": "slike/Stan-broj-6-11-i-17-naslovna.webp",
     "url": "/stanovi/jezero/jednosoban/jezero-ii-17/",
     "prostorije": {
       "Hodnik": "4,77 m²",
@@ -1009,7 +994,7 @@ const podaciStanovi = [
     "kvadratura": 24.86,
     "sobe": 0,
     "kupatila": 1,
-    "slika": "slike/stan_4088.webp",
+    "slika": "slike/Stan-broj-7-i-8-i-12-i-13-i-18-i-19-naslovna.webp",
     "url": "/stanovi/jezero/garsonjera/jezero-ii-13/",
     "prostorije": {
       "Hodnik": "1,80 m²",
@@ -1018,8 +1003,7 @@ const podaciStanovi = [
       "Terasa": "3,14 m²"
     },
     "galerija": [
-      "slike/Stan-broj-7-i-8-i-12-i-13-i-18-i-19-naslovna-2.webp",
-      "slike/I-sprat-13-II-sprat-19.webp"
+      "slike/Stan-broj-7-i-8-i-12-i-13-i-18-i-19-naslovna.webp"
     ]
   },
   {
@@ -1035,7 +1019,7 @@ const podaciStanovi = [
     "kvadratura": 24.86,
     "sobe": 0,
     "kupatila": 1,
-    "slika": "slike/stan_4091.webp",
+    "slika": "slike/Stan-broj-7-i-8-i-12-i-13-i-18-i-19-naslovna.webp",
     "url": "/stanovi/jezero/garsonjera/jezero-ii-19/",
     "prostorije": {
       "Hodnik": "1,80 m²",
@@ -1044,7 +1028,7 @@ const podaciStanovi = [
       "Terasa": "3,14 m²"
     },
     "galerija": [
-      "slike/Stan-broj-7-i-8-i-12-i-13-i-18-i-19-naslovna-3.webp"
+      "slike/Stan-broj-7-i-8-i-12-i-13-i-18-i-19-naslovna.webp"
     ]
   },
   {
@@ -1060,7 +1044,7 @@ const podaciStanovi = [
     "kvadratura": 37.27,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4092.webp",
+    "slika": "slike/P9_I14_II20-Objekat-2-NASLOVNA.webp",
     "url": "/stanovi/jezero/jednosoban/jezero-ii-14/",
     "prostorije": {
       "Hodnik": "2,83 m²",
@@ -1071,7 +1055,6 @@ const podaciStanovi = [
       "Terasa": "3,93 m²"
     },
     "galerija": [
-      "slike/I-sprat-14-II-sprat-20.webp",
       "slike/P9_I14_II20-Objekat-2-NASLOVNA.webp"
     ]
   },
@@ -1088,7 +1071,7 @@ const podaciStanovi = [
     "kvadratura": 35.15,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4095.webp",
+    "slika": "slike/I15_II21-Objekat-2.webp",
     "url": "/stanovi/jezero/jednosoban/jezero-ii-15/",
     "prostorije": {
       "Hodnik": "1,71 m²",
@@ -1098,7 +1081,7 @@ const podaciStanovi = [
       "Terasa": "4,59 m²"
     },
     "galerija": [
-      "slike/I-sprat-15-II-sprat-21.webp"
+      "slike/I15_II21-Objekat-2.webp"
     ]
   },
   {
@@ -1114,7 +1097,7 @@ const podaciStanovi = [
     "kvadratura": 35.15,
     "sobe": 1,
     "kupatila": 1,
-    "slika": "slike/stan_4097.webp",
+    "slika": "slike/I15_II21-Objekat-2.webp",
     "url": "/stanovi/jezero/jednosoban/jezero-ii-21/",
     "prostorije": {
       "Hodnik": "1,71 m²",
@@ -1124,7 +1107,7 @@ const podaciStanovi = [
       "Terasa": "4,59 m²"
     },
     "galerija": [
-      "slike/stan_4095.webp"
+      "slike/I15_II21-Objekat-2.webp"
     ]
   },
   {
@@ -1140,7 +1123,7 @@ const podaciStanovi = [
     "kvadratura": 40.9,
     "sobe": 2,
     "kupatila": 1,
-    "slika": "slike/stan_4100.webp",
+    "slika": "slike/I16_II22-Objekat-2.webp",
     "url": "/stanovi/jezero/dvosoban/jezero-ii-22/",
     "prostorije": {
       "Hodnik": "4,45 m²",
@@ -1151,7 +1134,7 @@ const podaciStanovi = [
       "Terasa": "4,46 m²"
     },
     "galerija": [
-      "slike/I-sprat-16-II-sprat-22.webp"
+      "slike/I16_II22-Objekat-2.webp"
     ]
   },
   {

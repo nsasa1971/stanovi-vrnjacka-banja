@@ -705,12 +705,16 @@
         flex-direction: column;
         position: absolute;
         top: 100%;
-        left: 0;
         right: 0;
+        left: auto;
+        width: 260px;
+        max-width: 78vw;
         background: #ffffff;
         padding: 20px 24px;
-        box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.15);
         border-top: 1px solid var(--border);
+        border-left: 1px solid var(--border);
+        border-bottom-left-radius: 10px;
         gap: 16px;
         z-index: 999;
       }
@@ -721,13 +725,15 @@
         position: static;
         border: none;
         box-shadow: none;
-        padding: 4px 0 0 14px;
+        padding: 0 0 0 14px;
         min-width: 0;
       }
+      .nav-links.mobile-active .dropdown-menu li a { padding: 4px 16px; }
       .nav-links.mobile-active .nav-item-dropdown.dropdown-open .dropdown-menu {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 2px;
+        margin-top: 6px;
       }
     }
 

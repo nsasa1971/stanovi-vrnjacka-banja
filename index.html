@@ -682,6 +682,18 @@
     }
     .modal-gallery img:hover { transform: scale(1.03); }
 
+    .floating-btn {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+    .floating-btn.floating-btn-vidljivo {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
     @media (max-width: 991px) {
       .header-inner { display: flex; justify-content: space-between; }
       .header-center { display: none; }
@@ -722,12 +734,12 @@
       .search-col { flex: none; width: auto; }
       .search-col:nth-child(-n+3) { grid-column: 1 / -1; }
       .search-actions {
-        grid-column: 1 / -1;
-        display: flex !important;
+        display: contents !important;
+      }
+      .search-actions .btn-search-main,
+      .search-actions .btn-reset {
         width: 100%;
       }
-      .search-actions .btn-search-main { flex: 1; }
-      .search-actions .btn-reset { flex: 1; }
       .objects-section { padding-top: 60px; }
       .modal-prostorije-list { grid-template-columns: 1fr; }
       .modal-img-container { height: 320px; padding: 12px; }
@@ -784,7 +796,7 @@
   <!-- HERO & PRETRAGA -->
   <section class="hero">
     <div class="container hero-content">
-      <h1>Pronađite svoj idealan dom<br><span style="color: var(--primary);">u Vrnjačkoj Banji</span></h1>
+      <h1>Pronađite svoj dom<br><span style="color: var(--primary);">u Vrnjačkoj Banji</span></h1>
       <p>Kupovina direktno od investitora — moderna novogradnja bez posrednika i provizije</p>
     </div>
 
@@ -1112,14 +1124,15 @@
   </footer>
 
   <!-- DUGME ZA VRH -->
-  <a href="#" onclick="return idiNaPocetak();" style="position: fixed; bottom: 25px; right: 25px; width: 52px; height: 52px; background: var(--primary); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.25); text-decoration: none; z-index: 99;">
+  <a id="btnNaVrh" href="#" onclick="return idiNaPocetak();" class="floating-btn" style="position: fixed; bottom: 25px; right: 25px; width: 52px; height: 52px; background: var(--primary); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.25); text-decoration: none; z-index: 99;">
     <i class="fas fa-arrow-up"></i>
   </a>
 
   <!-- PLUTAJUĆE WHATSAPP DUGME -->
-  <a href="https://wa.me/381653268722?text=Pozdrav%2C%20zanima%20me%20ponuda%20za%20stanove%20u%20Vrnjačkoj%20Banji"
+  <a id="btnWhatsappFloat" href="https://wa.me/381653268722?text=Pozdrav%2C%20zanima%20me%20ponuda%20za%20stanove%20u%20Vrnjačkoj%20Banji"
      target="_blank" rel="noopener"
      title="Pišite nam na WhatsApp"
+     class="floating-btn"
      style="position: fixed; bottom: 25px; left: 25px; width: 52px; height: 52px; background: #25D366; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.25); text-decoration: none; z-index: 99; font-size: 1.5rem;">
     <i class="fab fa-whatsapp"></i>
   </a>
@@ -1678,6 +1691,20 @@
     popuniFiltere();
     popuniPreporucene();
     filtriraj();
+
+    // Plutajuca dugmad (na vrh / WhatsApp) - prikazi tek posle skrolovanja
+    (function () {
+      var dugmad = [document.getElementById('btnNaVrh'), document.getElementById('btnWhatsappFloat')].filter(Boolean);
+      if (!dugmad.length) return;
+      function osveziVidljivost() {
+        var vidljivo = window.scrollY > 300;
+        dugmad.forEach(function (el) {
+          el.classList.toggle('floating-btn-vidljivo', vidljivo);
+        });
+      }
+      window.addEventListener('scroll', osveziVidljivost, { passive: true });
+      osveziVidljivost();
+    })();
 
     // Slanje kontakt forme ka Netlify Forms (bez osvezavanja stranice)
     var kontaktForma = document.getElementById('kontaktForma');

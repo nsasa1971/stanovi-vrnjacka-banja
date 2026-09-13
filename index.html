@@ -714,6 +714,21 @@
         gap: 16px;
         z-index: 999;
       }
+      .nav-links.mobile-active .nav-item-dropdown > a i { transition: transform 0.2s; }
+      .nav-links.mobile-active .nav-item-dropdown.dropdown-open > a i { transform: rotate(180deg); }
+      .nav-links.mobile-active .dropdown-menu {
+        display: none;
+        position: static;
+        border: none;
+        box-shadow: none;
+        padding: 4px 0 0 14px;
+        min-width: 0;
+      }
+      .nav-links.mobile-active .nav-item-dropdown.dropdown-open .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
     }
 
     @media (max-width: 768px) {
@@ -761,8 +776,8 @@
       <nav class="header-center">
         <ul class="nav-links" id="glavniMeni">
           <li><a href="#" onclick="zatvoriMeni(); return idiNaPocetak();">Početna</a></li>
-          <li class="nav-item-dropdown">
-            <a href="#objekti" onclick="zatvoriMeni()">Objekti <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i></a>
+          <li class="nav-item-dropdown" id="navObjektiItem">
+            <a href="#objekti" id="navObjektiLink" onclick="return klikNaObjekti(event);">Objekti <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i></a>
             <ul class="dropdown-menu">
               <li><a href="#katalog" onclick="filtrirajPoObjektu('Rada Vilotijevića'); zatvoriMeni();">Rada Vilotijevića</a></li>
               <li><a href="#katalog" onclick="filtrirajPoObjektu('Heroja Čajke'); zatvoriMeni();">Heroja Čajke</a></li>
@@ -1301,12 +1316,26 @@
       var meni = document.getElementById('glavniMeni');
       var ikonica = document.getElementById('hamburgerIkonica');
       var centar = document.querySelector('.header-center');
+      var objektiStavka = document.getElementById('navObjektiItem');
 
       if (meni && meni.classList.contains('mobile-active')) {
         meni.classList.remove('mobile-active');
         if (centar) centar.style.display = '';
         if (ikonica) ikonica.className = 'fas fa-bars';
       }
+      if (objektiStavka) objektiStavka.classList.remove('dropdown-open');
+    }
+
+    function klikNaObjekti(e) {
+      var meni = document.getElementById('glavniMeni');
+      var jeMobilni = meni && meni.classList.contains('mobile-active');
+      if (jeMobilni) {
+        e.preventDefault();
+        document.getElementById('navObjektiItem').classList.toggle('dropdown-open');
+        return false;
+      }
+      zatvoriMeni();
+      return true;
     }
 
     function popuniFiltere() {

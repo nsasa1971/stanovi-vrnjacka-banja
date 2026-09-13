@@ -38,9 +38,5 @@
 /about-me/                          /#o-nama    301
 /kontakt/                           /#kontakt   301
 
-# Napomena: stranica
-#   https://stanovivbanja.com/wp-content/uploads/2023/08/blok-katalog-Mioprojekt.pdf
-# je STVARAN PDF fajl (katalog), ne HTML stranica - nju NE preusmeravaj,
-# nego skini sa starog sajta i postavi na IDENTICNU putanju
-# (wp-content/uploads/2023/08/blok-katalog-Mioprojekt.pdf) unutar
-# novog sajta, da bi link nastavio da radi bez izmene.
+# --- Stari PDF katalog (ukinut, ne postoji na novom sajtu) ---
+/wp-content/uploads/2023/08/blok-katalog-Mioprojekt.pdf   /#katalog   301

@@ -1,0 +1,46 @@
+# 301 preusmerenja sa starog WordPress sajta (stanovivbanja.com)
+# ka novom jednostranicnom sajtu, na osnovu liste indeksiranih
+# stranica iz Google Search Console (106 URL-ova, 2026-09-13).
+#
+# Netlify cita ovaj fajl automatski ako se nalazi u korenu sajta
+# (isti folder gde je index.html) i primenjuje pravila pri svakom
+# zahtevu, PRE nego sto pokusa da posluzi stvarni fajl.
+
+# --- Pojedinacne stranice stanova (77 indeksiranih) ---
+# npr. /stanovi/porta-infinitas/jednoiposoban/porta-2-stan-19/
+/stanovi/*                          /#katalog   301
+
+# --- Stranice objekata/zgrada (4 indeksirane) ---
+# npr. /objekat/rada-vilotijevica/
+/objekat/*                          /#katalog   301
+
+# --- Filteri i taksonomije (11 indeksiranih) ---
+/street/*                           /#katalog   301
+/offer-type/*                       /#katalog   301
+/sprat/*                            /#katalog   301
+/property-type/*                    /#katalog   301
+/features/*                         /#katalog   301
+/city/*                             /#katalog   301
+/advanced-search-form/              /#katalog   301
+
+# --- Blog: indeks, tagovi, kategorije, pojedinacni clanci (8 indeksiranih) ---
+/blog/                              /#blog      301
+/tag/*                              /#blog      301
+/category/*                         /#blog      301
+/7-instagram-accounts-for-interior-design-enthusiasts/   /#blog   301
+/renovating-a-living-room-experts-share-their-secrets/   /#blog   301
+/karneval-u-vrnjackoj-banji/                             /#blog   301
+/vrnjacka-banja-pravo-mesto-za-vas-novi-dom/             /#blog   301
+/zasto-kupiti-stan-u-vrnjackoj-banji/                    /#blog   301
+
+# --- O nama / Kontakt ---
+/o-nama/                            /#o-nama    301
+/about-me/                          /#o-nama    301
+/kontakt/                           /#kontakt   301
+
+# Napomena: stranica
+#   https://stanovivbanja.com/wp-content/uploads/2023/08/blok-katalog-Mioprojekt.pdf
+# je STVARAN PDF fajl (katalog), ne HTML stranica - nju NE preusmeravaj,
+# nego skini sa starog sajta i postavi na IDENTICNU putanju
+# (wp-content/uploads/2023/08/blok-katalog-Mioprojekt.pdf) unutar
+# novog sajta, da bi link nastavio da radi bez izmene.
